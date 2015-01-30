@@ -8,6 +8,8 @@ import java.net.URL;
 public class LoadResults {
 	
 	public static void main(String[] args) throws Exception {
+		
+		//REF: http://stackoverflow.com/questions/10257276/java-code-for-using-google-custom-search-api
 
 	    String key="AIzaSyAfj4MY2Z6Oqur_DWdI83coqtrgrqQhDW8";
 	    String qry="MrinalSeth";
@@ -22,10 +24,15 @@ public class LoadResults {
 	    String output;
 	    System.out.println("Output from Server .... \n");
 	    while ((output = br.readLine()) != null) {
+	    	
+//	    	System.out.println("\tOUTPUT : "+output);
 
 	        if(output.contains("\"link\": \"")){                
 	            String link=output.substring(output.indexOf("\"link\": \"")+("\"link\": \"").length(), output.indexOf("\","));
-	            System.out.println(link);       //Will print the google search links
+//	        System.out.println("outputsubstring(output.indexOf(link)):"+output.indexOf("\"link\": \""));
+//	        System.out.println("link: " + output.indexOf("\"link\": \"" ));
+//	        System.out.println("link: " + output.indexOf("\","));
+	    	System.out.println(link);       //Will print the google search links
 	        }     
 	    }
 	    conn.disconnect();                              
