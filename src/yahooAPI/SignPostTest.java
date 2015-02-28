@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
+import java.util.Scanner;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
@@ -109,7 +110,9 @@ public class SignPostTest {
     }
     
     private String getSearchString() {
-        return "Yahoo";
+    	System.out.println("What's your query?");
+    	String s = new Scanner(System.in).nextLine();
+        return s;
     }
     
     private boolean isConsumerKeyExists() {
@@ -132,9 +135,23 @@ public class SignPostTest {
      */
     public static void main(String[] args) {
     
+    	System.out.println("First lets do Yahoo.com");
+    	
+        BasicConfigurator.configure();
+        
+        try {
+            SignPostTest signPostTest = new SignPostTest("https://yboss.yahooapis.com/ysearch/");
+            signPostTest.returnHttpData();
+    
+        } catch (Exception e) {
+            log.info("Error", e);
+        }
+        
+        System.out.println("Now lets do Google.com");
+        
         BasicConfigurator.configure();
         try {
-            SignPostTest signPostTest = new SignPostTest();
+            SignPostTest signPostTest = new SignPostTest("https://yboss.yahooapis.com/ysearch/");
             signPostTest.returnHttpData();
     
         } catch (Exception e) {
