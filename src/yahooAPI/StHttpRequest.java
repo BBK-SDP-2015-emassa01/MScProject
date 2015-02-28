@@ -18,8 +18,9 @@ import oauth.signpost.exception.OAuthMessageSignerException;
 
 
 /**
- * @author David Hardtke
- * @author xyz
+ * @author OpenSource from the Yahoo API 'GetStarted' 
+ * https://developer.yahoo.com/boss/search/boss_api_guide/oauth.html#oauth-authorization-model-oauth-coding-examples
+ * @author (amended by) Esha Massand
  * Simple HTTPS Request implementation
  */
 public class StHttpRequest {
