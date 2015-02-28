@@ -10,6 +10,14 @@ import org.jsoup.Jsoup;
 public class HtmlParser {
 	
 	//REF: http://jsoup.org/
+	/*
+	 * This is a class to parse HTML code from any URL and search for links.
+	 * Can be used with any public page on the web, and may be used with the API's to check for redundancy in the links that are
+	 * presented back to the user.
+	 * The HTML parser will be able to check many more web-sites and integrate the results into those already selected by the custom
+	 * search Yahoo API.
+	 * The HTML parser will also use the Java Dictionary to produce synonyms to present similar (word) results to the user.
+	 */
 	
 	public static void main(String[] args){
 	

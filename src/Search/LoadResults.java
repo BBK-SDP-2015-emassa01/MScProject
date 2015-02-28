@@ -6,6 +6,12 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/*
+ * This class was built using the Google Custom Search API which does not currently search 'Google' but only custom pages entered
+ * by the user. 
+ * Will return to the Google Custom Search after parameters have been finalised to get the business edition of Custom Search 
+ * to query Google.com.
+ */
 public class LoadResults {
 	
 	public static void main(String[] args) throws Exception {
