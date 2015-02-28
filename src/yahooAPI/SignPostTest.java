@@ -111,7 +111,7 @@ public class SignPostTest {
     
     private String getSearchString() {
     	System.out.println("What's your query?");
-    	String s = new Scanner(System.in).nextLine();
+    	String s = new Scanner(System.in).nextLine(); //does not handle spaces in query
         return s;
     }
     
@@ -147,16 +147,6 @@ public class SignPostTest {
             log.info("Error", e);
         }
         
-        System.out.println("Now lets do Google.com");
-        
-        BasicConfigurator.configure();
-        try {
-            SignPostTest signPostTest = new SignPostTest("https://yboss.yahooapis.com/ysearch/");
-            signPostTest.returnHttpData();
-    
-        } catch (Exception e) {
-            log.info("Error", e);
-        }
     }
 }
 
