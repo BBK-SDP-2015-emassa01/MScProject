@@ -110,7 +110,13 @@ public class SignPostTest {
     }
     
     private String getSearchString() {
-    	System.out.println("What's your query?");
+    	System.out.println("What's your query?"); 
+    	/*
+    	 * must be in format: (esha)AND(massand), need to write some code to format query like this.
+    	 * more complex things include adding a site to search "&sites=askville.amazon.com"
+    	 * AND/OR's :
+    	 * Query is /ysearch/web?q=(((steve)OR(jobs))AND(“apple tv”))&sites=askville.amazon.com
+    	 */
     	String s = new Scanner(System.in).nextLine(); //does not handle spaces in query
         return s;
     }
