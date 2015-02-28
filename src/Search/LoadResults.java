@@ -1,6 +1,7 @@
 package Search;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -11,10 +12,21 @@ public class LoadResults {
 		
 		//REF: http://stackoverflow.com/questions/10257276/java-code-for-using-google-custom-search-api
 
-	    String key="AIzaSyAfj4MY2Z6Oqur_DWdI83coqtrgrqQhDW8";
-	    String qry="MrinalSeth";
-	    URL url = new URL(
-	            "https://www.googleapis.com/customsearch/v1?key="+key+ "&cx=013036536707430787589:_pqjad5hr1a&q="+ qry + "&alt=json");
+	    String key="AIzaSyAQw6ZbwZ-BrMY3AnWczXu4LkE_JbLBdyY";
+	    String qry="Esha Massand";
+	    String cx = "008818185974073145685:wiwfib018ui";
+	    URL url = null;
+	    try{
+	    url = new URL(
+	            "https://www.googleapis.com/customsearch/v1?key="+key+"&cx=" + cx + "&q=" + qry + "&alt=json");
+	    //https://www.google.co.uk/?#q=hello -- it's in the cite tab
+	    //https://uk.search.yahoo.com/search;?p=hello -- it;s n the <a id = "link-1" or 'span'
+	    }catch (Exception  e){
+	    	e.getMessage();
+	    }
+	    
+	    //GET https://www.googleapis.com/customsearch/v1?key=INSERT_YOUR_API_KEY&cx=017576662512468239146:omuauf_lfve&q=lectures
+	    //https://www.googleapis.com/customsearch/v1?key= INSERT_YOUR_API_KEY &cx=017576662512468239146:omuauf_lfve&q=lectures
 	    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 	    conn.setRequestMethod("GET");
 	    conn.setRequestProperty("Accept", "application/json");
