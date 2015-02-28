@@ -3,5 +3,13 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="/Users/Esha/Documents/Jsoup/jsoup-1.8.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/signpost-core-1.2.1.2.jar"/>
+	<classpathentry kind="lib" path="apache-log4j-1.2.17"/>
+	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/commons-codec-1.10/commons-codec-1.10-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/commons-codec-1.10/commons-codec-1.10-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/commons-codec-1.10/commons-codec-1.10-test-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/commons-codec-1.10/commons-codec-1.10-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/commons-codec-1.10/commons-codec-1.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
