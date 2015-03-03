@@ -52,7 +52,7 @@
 		<script src="js/renderers/CSS3DRenderer.js"></script>
 
 		<div id="container"></div>
-		<div id="search"><input id="query" type="text" value="autism AND asperger"><button id="button">search</button></div>
+		<div id="search"><input id="query" type="text" value= autism><button id="button">search</button></div>
 
 		<script>
 			var camera, scene, renderer;
@@ -292,6 +292,12 @@
 				
 				}
 
+			}
+
+			function requestSearch(){
+
+				return System.console().readLine();
+			
 			}
 
 			function move( delta ) {
