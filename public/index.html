@@ -51,7 +51,7 @@
 		<script src="js/renderers/CSS3DRenderer.js"></script>
 
 		<div id="container"></div>
-		<div id="search"><input id="query" type="text" value= "" ><button id="button">search youtube</button></div>
+		<div id="search"><input id="query" type="text/javascript" requestSearch() ><button id="button">search youtube</button></div>
 
 		<script>
 			var camera, scene, renderer;
@@ -293,7 +293,7 @@
 
 			}
 
-			function requestSearch(){
+			var requestSearch  = function(){
 
 				return System.console().readLine();
 			
