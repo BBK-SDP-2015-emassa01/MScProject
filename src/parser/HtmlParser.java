@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
+import java.util.List;
 
 import org.jsoup.Jsoup;
 
@@ -20,7 +21,10 @@ public class HtmlParser {
 	 */
 	
 	public static void main(String[] args){
-	
+		
+		String[] searchPages = {"http://www.google.com/search?q=", "https://uk.search.yahoo.com/search?p=", "https://www.bing.com/search?q="};
+
+		
 	String google = "http://www.google.com/search?q=";
 	String search = "Esha Massand";
 	String charset = "UTF-8";
@@ -55,4 +59,5 @@ public class HtmlParser {
 	    System.out.println("URL: " + url);
 	}
 	}
+
 }
