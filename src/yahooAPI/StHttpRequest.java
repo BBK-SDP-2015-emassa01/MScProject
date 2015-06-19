@@ -113,10 +113,10 @@ public class StHttpRequest {
      * @return String
      */
 	public String getResponseBody() {
-        for (int i = 0; i< responseBody.length(); i = i+100){
-        	System.out.println(responseBody.substring(i, i+100));
-        	responseBody = responseBody.substring(100, responseBody.length());
-        }
+//        for (int i = 0; i< responseBody.length(); i = i+100){
+//        	System.out.println(responseBody.substring(i, i+100));
+//        	responseBody = responseBody.substring(100, responseBody.length());
+//        }
     	return responseBody;
     }
 

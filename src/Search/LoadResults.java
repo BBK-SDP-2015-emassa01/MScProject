@@ -1,7 +1,6 @@
 package Search;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -17,10 +16,11 @@ public class LoadResults {
 	public static void main(String[] args) throws Exception {
 		
 		//REF: http://stackoverflow.com/questions/10257276/java-code-for-using-google-custom-search-api
-
-	    String key="AIzaSyAQw6ZbwZ-BrMY3AnWczXu4LkE_JbLBdyY";
-	    String qry="Esha Massand";
-	    String cx = "008818185974073145685:wiwfib018ui";
+		// for key https://console.developers.google.com/project/246574547152/apiui/credential
+	    String key="AIzaSyDbF1Bflr2i3O61xEcXcRYG6-7knAOmxIU";
+	    String qry="EshaMassand";
+	    // for ID https://cse.google.com/cse/setup/basic?cx=008818185974073145685:ga_fmgk9gf0
+	    String cx = "008818185974073145685:ga_fmgk9gf0";
 	    URL url = null;
 	    try{
 	    url = new URL(
@@ -43,13 +43,13 @@ public class LoadResults {
 	    System.out.println("Output from Server .... \n");
 	    while ((output = br.readLine()) != null) {
 	    	
-//	    	System.out.println("\tOUTPUT : "+output);
+	    	System.out.println("\tOUTPUT : "+output);
 
 	        if(output.contains("\"link\": \"")){                
 	            String link=output.substring(output.indexOf("\"link\": \"")+("\"link\": \"").length(), output.indexOf("\","));
-//	        System.out.println("outputsubstring(output.indexOf(link)):"+output.indexOf("\"link\": \""));
-//	        System.out.println("link: " + output.indexOf("\"link\": \"" ));
-//	        System.out.println("link: " + output.indexOf("\","));
+	        System.out.println("outputsubstring(output.indexOf(link)):"+output.indexOf("\"link\": \""));
+	        System.out.println("link: " + output.indexOf("\"link\": \"" ));
+	        System.out.println("link: " + output.indexOf("\","));
 	    	System.out.println(link);       //Will print the google search links
 	        }     
 	    }

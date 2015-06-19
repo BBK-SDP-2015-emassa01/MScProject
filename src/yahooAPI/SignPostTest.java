@@ -73,6 +73,7 @@ public class SignPostTest {
             // Encode Query string before concatenating
             params = params.concat(URLEncoder.encode(this.getSearchString(), "UTF-8"));
             
+            
             // Create final URL
             String url = yahooServer + params;
             
@@ -93,7 +94,7 @@ public class SignPostTest {
                     log.error("Error in response due to status code = " + responseCode);
                 }
                 log.info(httpsRequest.getResponseBody());
-            
+           
             } catch(UnsupportedEncodingException e) {
                 log.error("Encoding/Decording error");
             } catch (IOException e) {
