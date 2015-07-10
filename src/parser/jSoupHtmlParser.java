@@ -19,34 +19,59 @@ import org.jsoup.select.Elements;
 		  
 		  //String query = new Scanner(System.in).nextLine();
 		  
-		  String query = "Esha Massand";
+		  //yahoo = "esha+massand"
+		  String query = "esha+massand";
 		  
 		  System.out.println("Running jSoupHtmlParser");
 		Document doc;
 		try {
 	 
-			String[] searchPages = {"http://www.google.com/search?#q=", "https://uk.search.yahoo.com/search?p=", "https://www.bing.com/search?q="};
-			
+			//String[] searchPages = {"https://www.google.co.uk/search?#q=", "https://uk.search.yahoo.com/search?p=", "https://www.bing.com/search?q="};
+			String[] searchPages = {"https://www.google.co.uk/search?#q="};
 			for (String searchPage: searchPages){
 			String tempSearch = searchPage + query;
-				
+
 			// need http protocol
-			doc = Jsoup.connect("http://google.com").get();
+			doc = Jsoup.connect(tempSearch).get();
 	 
+			//System.out.println(doc);
 			// get page title
 			String title = doc.title();
 			System.out.println("\ntitle : " + title);
 	 
+			//test
+			
+			//Element elementByID = doc.getElementById("rcnt");
+			//System.out.println("elementByID: "+elementByID);
+			
+//			for (Element link : linkList) {
+//				  String linkHref = link.attr("href");
+//				  String linkText = link.text();
+//				  System.out.println("linkHref: "+linkHref);
+//				  System.out.println( "linkText: "+linkText);
+//				}
+			
+			
+//			Element body = doc.body();
+//			System.out.println("body:" + body);
+			
+			//yahoo = "h3.title > a"
+			//bing = "h2 a"
+			
 			// get all links
-			Elements links = doc.select("a[href]");
+			Elements links = doc.select("a[href] ");
+			System.out.println("length of links: " + links.size());
 			for (Element link : links) {
 	 
 				// get the value from href attribute
-				System.out.println("text : " + Jsoup.parse(tempSearch).body().text());
-				System.out.println("\nlinkHref : " + link.attr("href"));
+				System.out.println("\ntext : " + Jsoup.parse(tempSearch).body().text());
+				System.out.println("linkHref : " + link.attr("href"));
 				System.out.println("linkText : " + link.text());
+				System.out.println("hasClass : " + link.hasClass("r"));
+				System.out.println( "absHref: "+  link.attr("abs:href")); 
+				//System.out.println("html : " + link.html());
 				//System.out.println("tag : " + link.tag());
-				//System.out.println("tagName : " + link.tagName());
+				System.out.println("tagName : " + link.tagName());
 				//System.out.println("val : " + link.val());
 				 
 			}
