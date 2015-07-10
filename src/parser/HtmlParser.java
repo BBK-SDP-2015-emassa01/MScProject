@@ -21,7 +21,7 @@ public class HtmlParser {
 	 */
 	
 	public static void main(String[] args){
-		
+		System.out.println("Running HtmlParser");
 		String[] searchPages = {"http://www.google.com/search?q=", "https://uk.search.yahoo.com/search?p=", "https://www.bing.com/search?q="};
 
 		
