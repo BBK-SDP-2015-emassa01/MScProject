@@ -18,7 +18,7 @@ public class LoadResults {
 		//REF: http://stackoverflow.com/questions/10257276/java-code-for-using-google-custom-search-api
 		// for key https://console.developers.google.com/project/246574547152/apiui/credential
 	    String key="AIzaSyDbF1Bflr2i3O61xEcXcRYG6-7knAOmxIU";
-	    String qry="EshaMassand";
+	    String qry="Esha+Massand";
 	    // for ID https://cse.google.com/cse/setup/basic?cx=008818185974073145685:ga_fmgk9gf0
 	    String cx = "008818185974073145685:ga_fmgk9gf0";
 	    URL url = null;

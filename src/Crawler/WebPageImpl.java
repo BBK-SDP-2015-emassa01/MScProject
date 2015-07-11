@@ -110,7 +110,7 @@ public class WebPageImpl implements WebPage {
 
     public static void main(String[] args) throws MalformedURLException {
 
-        WebPage webPage = new WebPageImpl(new URL("https://www.google.co.uk/webhp?ie=UTF-8&rct=j&gws_rd=cr&ei=OqrxVOaLFoGhUO6YgfgI#q=hello"));
+        WebPage webPage = new WebPageImpl(new URL("https://www.google.co.uk/webhp?ie=UTF-8&rct=j&gws_rd=cr&ei=OqrxVOaLFoGhUO6YgfgI#q=esha+massand"));
         webPage.scanForWebpages();
         webPage.scanForEmails();
 

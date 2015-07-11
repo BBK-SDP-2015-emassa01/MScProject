@@ -5,6 +5,7 @@ package parser;
 	 
 
 
+import java.net.URLEncoder;
 import java.util.Scanner;
 
 	import org.jsoup.Jsoup;
@@ -59,7 +60,8 @@ import org.jsoup.select.Elements;
 			//bing = "h2 a"
 			
 			// get all links
-			Elements links = doc.select("a[href] ");
+			//Elements links = Jsoup.connect(searchPage + URLEncoder.encode(query, "UTF-8")).userAgent("xxx").get().select("li.g>h3>a");
+			Elements links = doc.select("a[href]");
 			System.out.println("length of links: " + links.size());
 			for (Element link : links) {
 	 
