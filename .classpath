@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="/Users/Esha/Documents/Jsoup/jsoup-1.8.1.jar"/>
 	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/signpost-core-1.2.1.2.jar"/>
 	<classpathentry kind="lib" path="apache-log4j-1.2.17"/>
@@ -13,5 +12,42 @@
 	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/lucene-5.0.0/core/lucene-core-5.0.0.jar"/>
 	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/lucene-5.0.0/analysis/common/lucene-analyzers-common-5.0.0.jar"/>
 	<classpathentry kind="lib" path="/Users/Esha/Documents/Libraries/apache-log4j-1.2.17 3/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Desktop/MSc Computer Science/Year2/Project/lucene/lucene-4.10.3 3/core/lucene-core-4.10.3.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Desktop/MSc Computer Science/Year2/Project/lucene/lucene-4.10.3 3/queryparser/lucene-queryparser-4.10.3.jar"/>
+	<classpathentry kind="lib" path="/Users/Esha/Desktop/MSc Computer Science/Year2/Project/lucene/lucene-4.10.3 3/expressions/lucene-expressions-4.10.3.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/javafx-src.zip"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/cldrdata.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/dnsns.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/jfxrt.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/localedata.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/nashorn.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/sunec.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/ext/zipfs.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/deploy.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/htmlconverter.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/javaws.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfxswt.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/management-agent.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/plugin.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/AppleScriptEngine.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/dns_sd.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/j3daudio.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/j3dcore.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/j3dutils.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/jai_codec.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/jai_core.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/mlibwrapper_jai.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/MRJToolkit.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/QTJava.zip"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/vecmath.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
