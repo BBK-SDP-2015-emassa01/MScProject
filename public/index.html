@@ -24,20 +24,10 @@
     <div id="signin-button" ></div>
   </div>
   <div id="authOps" style="display:none">
-    <h2>User is now signed in to the app using Google+</h2>
+    <h4>User is now signed in to the app using Google+</h4>
     <button id="signOut" onclick="auth2.signOut()">Sign Out</button>
-    <p>If the user chooses to disconnect, the app must delete all stored
-    information retrieved from Google for the given user.</p>
-    <button id="disconnect" >Disconnect your Google account from this app</button>
-
     <h2>User's profile information</h2>
     <div id="profile"></div>
-
-    <h2>User's friends that are visible to this app</h2>
-    <div id="visiblePeople"></div>
-
-    <h2>Authentication Logs</h2>
-    <pre id="authResult"></pre>
   </div>
   <div id="loaderror">
     This section will be hidden by JQuery. If you can see this message, you
@@ -134,15 +124,6 @@ var helper = (function() {
 // var request = gapi.client.plus.people.get({
 //   'userId' : 'me'
 // });
-
-// request.execute(function(resp) {
-//   console.log('ID: ' + resp.id);
-//   console.log('Display Name: ' + resp.displayName);
-//   console.log('Image URL: ' + resp.image.url);
-//   console.log('Profile URL: ' + resp.url);
-// });
-
-
 
 /**
  * jQuery initialization
