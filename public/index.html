@@ -20,13 +20,11 @@
 </head>
 <body>
   
-  <div id="gConnect" class = "col-md-12 text-center">
+  <div id="gConnect">
     <div id="signin-button" ></div>
   </div>
   <div id="authOps" style="display:none">
-    <h4>User is now signed in to the app using Google+</h4>
     <button id="signOut" onclick="auth2.signOut()">Sign Out</button>
-    <h2>User's profile information</h2>
     <div id="profile"></div>
   </div>
   <div id="loaderror">
@@ -96,8 +94,7 @@ var helper = (function() {
         $('#profile').append(
             $('<p><img src=\"' + profile.image.url + '\"></p>'));
         $('#profile').append(
-            $('<p>Hello ' + profile.displayName + '!<br />Tagline: ' +
-            profile.tagline + '<br />About: ' + profile.aboutMe + '</p>'));
+            $('<p>Hello ' + profile.displayName));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
