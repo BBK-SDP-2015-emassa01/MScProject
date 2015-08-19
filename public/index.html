@@ -94,7 +94,7 @@ var helper = (function() {
         $('#profile').append(
             $('<p><img src=\"' + profile.image.url + '\"></p>'));
         $('#profile').append(
-            $('<p>Hello ' + profile.displayName));
+            $('<p>Hello ' + profile.displayName + '</p>'));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
