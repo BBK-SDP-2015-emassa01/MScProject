@@ -19,13 +19,13 @@
 
 </head>
 <body>
-  
+  <div class = "row">
   <div id="gConnect">
-    <div id="signin-button" ></div>
+    <div id="signin-button" class = "col-md-6" ></div>
   </div>
   <div id="authOps" style="display:none">
     <button id="signOut" onclick="auth2.signOut()">Sign Out</button>
-    <div id="profile"></div>
+    <div id="profile" class = "col-md-6" ></div>
   </div>
   <div id="loaderror">
     This section will be hidden by JQuery. If you can see this message, you
@@ -33,6 +33,7 @@
     The sample must be run from http or https. See instructions at
     <a href="https://developers.google.com/+/quickstart/javascript">
     https://developers.google.com/+/quickstart/javascript</a>.
+  </div>
   </div>
 <script type="text/javascript">
 var auth2 = {};
