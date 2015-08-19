@@ -91,6 +91,8 @@ var helper = (function() {
         'userId': 'me'
       }).then(function(res) {
         var profile = res.result;
+        var aq = 50;
+
         console.log(profile);
         console.log("DOES THIS USER HAVE ASD? " + profile.aboutMe.includes("autism"));
 
@@ -104,7 +106,7 @@ var helper = (function() {
         $('#profile').append(
             $('<p>Hello ' + profile.displayName + '</p>'));
         $('#profile').append(
-          $('<p>AQ Score 50 </p>'));
+          $('<p>AQ Score: ' + aq + ' </p>'));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
