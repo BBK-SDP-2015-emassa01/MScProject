@@ -98,6 +98,8 @@ var helper = (function() {
         var profile = res.result;
         console.log(profile);
         console.log("DOES THIS USER HAVE ASD? " + profile.aboutMe.includes("autism"));
+        var aq = '50';
+
 
         if (profile.aboutMe.includes("autism") == false) {console.log("NOT PROCEEDING WITH USER PERSONA")}
           else {console.log("PROCEEDING WITH USER PERSONA")};
@@ -107,6 +109,8 @@ var helper = (function() {
             $('<p><img src=\"' + profile.image.url + '\"></p>'));
         $('#profile').append(
             $('<p>Hello ' + profile.displayName + '</p>'));
+        $('#profile').append(
+          $('<p>AQ Score ' + profile.aq + '</p>'));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
@@ -192,7 +196,7 @@ function startApp() {
 
 <div class = "container">
 <div class = "row">
-    <embed src ="UserInput.class">
+    <embed ="UserInput.class">
     </div>
 </div>
 
