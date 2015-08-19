@@ -91,7 +91,7 @@ var helper = (function() {
         'userId': 'me'
       }).then(function(res) {
         var profile = res.result;
-        var aq = 50;
+        var aq = null;
 
         console.log(profile);
         console.log("DOES THIS USER HAVE ASD? " + profile.aboutMe.includes("autism"));
