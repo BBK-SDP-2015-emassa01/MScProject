@@ -56,6 +56,14 @@ function calculateAQ(){
 }
 </script>
 
+<script type = "text/javascript">
+function returnAQ(){  
+    return 4; 
+} 
+    else if (document.getElementById('Q5CALC').value < 1 ) {alert('You do not have traits of Autism');}
+}
+</script>
+
 <title>Your Autism Quotient Answers</title>
 
 <style type="text/css" media="screen">
@@ -156,7 +164,7 @@ var helper = (function() {
         $('#profile').append(
             $('<p>Hello ' + profile.displayName + '</p>'));
         $('#profile').append(
-          $('<p>AQ Score: ' + calculateAQ() + ' </p>'));
+          $('<p>AQ Score: ' + returnAQ() + ' </p>'));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
