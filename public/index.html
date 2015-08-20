@@ -44,6 +44,14 @@ var tableToExcel = (function() {
 })()
 </script>
 
+<script type = "text/javascript">
+function calculateAQ(){  
+    if (document.getElementById('Q5CALC').value === 4 ) {
+        alert('Your Autism Quotient score is: ' + document.getElementById('Q5CALC').value);   
+} else {alert('Nah');}
+}
+</script>
+
 <title>HTML Form Data to Excel</title>
 
 <style type="text/css" media="screen">
@@ -330,6 +338,7 @@ function startApp() {
 </div>
 
 <input type="button" onclick="fillHidTable()" value="Export Data to Excel">
+<input type="button" onclick="calculateAQ()" value="Calculate and Save My Score">
 
 </div>
 </div>
