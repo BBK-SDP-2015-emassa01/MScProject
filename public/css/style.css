@@ -42,3 +42,8 @@ hr {
 	background: green;
 }
 
+.surprise, .surprise2 {
+    border-radius: 50%;
+    display: inline-block;
+}
+
