@@ -152,7 +152,7 @@ var helper = (function() {
         $('#profile').append(
             $('<p>Hello ' + profile.displayName + '</p>'));
         $('#profile').append(
-          $('<p>AQ Score: ' + aq + ' </p>'));
+          $('<p>AQ Score: ' + calculateAQ() + ' </p>'));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
