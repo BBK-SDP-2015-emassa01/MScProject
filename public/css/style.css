@@ -39,19 +39,19 @@ hr {
 #first {
 	width:200px;
 	height:200px;
-	background: url (data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkgID/DAwMjCAaTMA4IBokgF8FAASfCAPCm4IGAAAAAElFTkSuQmCC) repeat;
+	background: #006880;
 }
 
 #second {
 	width:200px;
 	height:200px;
-	background: #006880;
+	background: #E3FF00;
 }
 
 #third {
 	width:200px;
 	height:200px;
-	background: #006880;
+	background: #13FF00;
 }
 
 .surprise, .surprise2 {
