@@ -156,7 +156,7 @@ var helper = (function() {
         $('#profile').append(
             $('<p>Hello ' + profile.displayName + '</p>'));
         $('#profile').append(
-          $('<p>AQ Score: ' + calculateAQ() + ' </p>'));
+          $('<p>AQ Score: ' + document.getElementById('Q5CALC').value + ' </p>'));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
@@ -341,8 +341,8 @@ function startApp() {
     </table>
 </div>
 
-<input type="button" onclick="fillHidTable()" value="Export Data to Excel">
-<input type="button" onclick="calculateAQ()" value="Calculate and Save My Score">
+<input type="button" onclick="fillHidTable()" value="Save Your Answers to Excel">
+<input type="button" onclick="calculateAQ()" value="Calculate Your Score">
 
 </div>
 </div>
