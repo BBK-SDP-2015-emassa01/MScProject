@@ -16,6 +16,10 @@ hr {
 	font-size: 30px;
 }
 
+h1 {
+    text-align: center;
+}
+
 .text-muted {
 	color: #BCBBBB;
 }
@@ -57,5 +61,26 @@ hr {
 .surprise, .surprise2 {
     border-radius: 50%;
     display: inline-block;
+}
+
+#firstSmall {
+    width:100px;
+	height:100px;
+	background: #037C98;
+	margin-top: 20px;
+}
+
+#secondSmall {
+	width:100px;
+	height:100px;
+	background: #E3FF00;
+	margin-top: 20px;
+}
+
+#thirdSmall {
+	width:100px;
+	height:100px;
+	background: #13FF00;
+	margin-top: 20px;
 }
 
