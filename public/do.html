@@ -15,36 +15,32 @@
 <body>
 <div class = "container">
 <div class = "row">
-	<div class = "col-md-2"></div>
-
-
+<div class = "col-md-2"></div>
 <div class = "col-md-8 text-center text-uppercase">
 <h1 class = "title-super text-uppercase text-thin">Jellibeans</h1>
 <h4>Search</h4>
 </div>
-
 <div class = "col-md-2 text-center text-uppercase">
 <img class = "img-responsive surprise" id = "firstSmall">
 </div>
-
 <div class = "row">
-	<div class = "col-md-12">
-		<hr>
-	</div>
-	</div>
-
+<div class = "col-md-12">
+<hr>
+</div>
+</div>
 <form action="queryString.asp" method="get" target="_blank" class = "title-lesssuper text-thin text-center ">
-	<div class = "row">
-	<div class = "col-md-12">
-  What do you want to <b>do</b> on the web? 
-  </div>
-	</div>
-	<div class = "row">
-	<div class = "col-md-12">
-  <input type="text" name="go" class = "title-logo" style = "height: 52px; width: 700px;"><br>
-   </div>
-	</div>
- <input type="submit" value="Search" class = "title-logo title-small">
+<div class = "row">
+<div class = "col-md-12">
+What do you want to <b>do</b> on the web?
+</div>
+</div>
+<div class = "row">
+<div class = "col-md-12">
+<input type="text" name="go" class = "title-logo" style = "height: 52px; width: 700px;"><br>
+</div>
+</div>
+<input type="button" value="Search in Google" class = "title-logo title-small" onClick= "location.href='http://www.google.com' +'#q=' + go.value">
+<input type="button" value="Do More" class = "title-logo title-small" onClick = "location.href='doMore.html'">
 </form>
 </div>
 
