@@ -247,13 +247,32 @@ function startApp() {
 *This part creates the table for the excel information!
 */
 </script>
-<div class = " title-lesssuper row text-center ">
-<a href = "DoKnowGo.html" class = "text-uppercase">Go to Jellibean Search</a>
+<div class = "container">
+<div class = " title-lesssuper row img-responsive" align="right">
+    <a href = "DoKnowGo.html" class = "text-uppercase" style="
+        margin-right: 20px;" >Go</a>
 </br>
 <div class = "text-thinSmall">
-<p>Jellibeans is a search engine that guides you to formulate your query.</p>
+
 </div>
 </div>
+</div>
+
+<div class = "container">
+    <div class = "row">
+        <div class ="col-md-2"></div>
+        <div class = "col-md-8 text-center text-uppercase">
+            <h1 class = "title-super text-uppercase text-thin" >Jellibeans</h1>
+            <h4>Search</h4>
+        </div>
+        <div class = "col-md-2 text-center text-uppercase">
+            <img data-toggle ="modal" data-target ="#jbean" class="img-responsive surprise" id = "firstSuperSmall">
+            <img data-toggle ="modal" data-target ="#jbean" class="img-responsive surprise" id = "secondSuperSmall">
+             <img data-toggle ="modal" data-target ="#jbean" class="img-responsive surprise" id = "thirdSuperSmall">
+        </div>
+    </div>
+    </div>
+<hr>
 
 
 <div class = "container text-center img-responsive">
@@ -362,6 +381,25 @@ function startApp() {
 </div>
 
 </div>
+
+
+<div class="modal fade text-center" id="jbean" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Jellibean</h4>
+            </div>
+            <div class="modal-body ">
+                
+                    <br>Jellibeans is a search engine that guides you to formulate your query.
+                    </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html >
