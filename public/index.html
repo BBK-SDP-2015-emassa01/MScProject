@@ -45,9 +45,119 @@ var tableToExcel = (function() {
 </script>
 
 <script type = "text/javascript">
-function calculateAQ(){  
-    if (document.getElementById('Q5CALC').value === "" ) {
-        alert('Please complete your Autism Quotient score to get started');
+    function checkScores(){
+    if (
+    document.getElementById('Q1CALC').value ||
+    document.getElementById('Q2CALC').value ||
+    document.getElementById('Q3CALC').value ||
+    document.getElementById('Q4CALC').value ||
+    document.getElementById('Q5CALC').value ||
+    document.getElementById('Q6CALC').value ||
+    document.getElementById('Q7CALC').value ||
+    document.getElementById('Q8CALC').value ||
+    document.getElementById('Q9CALC').value ||
+    document.getElementById('Q10CALC').value ||
+    document.getElementById('Q11CALC').value ||
+    document.getElementById('Q12CALC').value ||
+    document.getElementById('Q13CALC').value ||
+    document.getElementById('Q14CALC').value ||
+    document.getElementById('Q15CALC').value ||
+    document.getElementById('Q16CALC').value ||
+    document.getElementById('Q17CALC').value ||
+    document.getElementById('Q18CALC').value ||
+    document.getElementById('Q19CALC').value ||
+    document.getElementById('Q20CALC').value ||
+    document.getElementById('Q21CALC').value ||
+    document.getElementById('Q22CALC').value ||
+    document.getElementById('Q23CALC').value ||
+    document.getElementById('Q24CALC').value ||
+    document.getElementById('Q25CALC').value ||
+    document.getElementById('Q26CALC').value ||
+    document.getElementById('Q27CALC').value ||
+    document.getElementById('Q28CALC').value ||
+    document.getElementById('Q29CALC').value ||
+    document.getElementById('Q30CALC').value ||
+    document.getElementById('Q31CALC').value ||
+    document.getElementById('Q32CALC').value ||
+    document.getElementById('Q33CALC').value ||
+    document.getElementById('Q34CALC').value ||
+    document.getElementById('Q35CALC').value ||
+    document.getElementById('Q36CALC').value ||
+    document.getElementById('Q37CALC').value ||
+    document.getElementById('Q38CALC').value ||
+    document.getElementById('Q39CALC').value ||
+    document.getElementById('Q40CALC').value ||
+    document.getElementById('Q41CALC').value ||
+    document.getElementById('Q42CALC').value ||
+    document.getElementById('Q43CALC').value ||
+    document.getElementById('Q44CALC').value ||
+    document.getElementById('Q45CALC').value ||
+    document.getElementById('Q46CALC').value ||
+    document.getElementById('Q47CALC').value ||
+    document.getElementById('Q48CALC').value ||
+    document.getElementById('Q49CALC').value ||
+    document.getElementById('Q50CALC').value
+    > 1 ) {
+    alert('You have entered a number that is not one of the possible options. Check your answers and try again.');
+    }
+    }
+</script>
+
+<script type = "text/javascript">
+function calculateAQ(){
+    if (
+        document.getElementById('Q1CALC').value ||
+        document.getElementById('Q2CALC').value ||
+        document.getElementById('Q3CALC').value ||
+        document.getElementById('Q4CALC').value ||
+        document.getElementById('Q5CALC').value ||
+        document.getElementById('Q6CALC').value ||
+        document.getElementById('Q7CALC').value ||
+        document.getElementById('Q8CALC').value ||
+        document.getElementById('Q9CALC').value ||
+        document.getElementById('Q10CALC').value ||
+        document.getElementById('Q11CALC').value ||
+        document.getElementById('Q12CALC').value ||
+        document.getElementById('Q13CALC').value ||
+        document.getElementById('Q14CALC').value ||
+        document.getElementById('Q15CALC').value ||
+        document.getElementById('Q16CALC').value ||
+        document.getElementById('Q17CALC').value ||
+        document.getElementById('Q18CALC').value ||
+        document.getElementById('Q19CALC').value ||
+        document.getElementById('Q20CALC').value ||
+        document.getElementById('Q21CALC').value ||
+        document.getElementById('Q22CALC').value ||
+        document.getElementById('Q23CALC').value ||
+        document.getElementById('Q24CALC').value ||
+        document.getElementById('Q25CALC').value ||
+        document.getElementById('Q26CALC').value ||
+        document.getElementById('Q27CALC').value ||
+        document.getElementById('Q28CALC').value ||
+        document.getElementById('Q29CALC').value ||
+        document.getElementById('Q30CALC').value ||
+        document.getElementById('Q31CALC').value ||
+        document.getElementById('Q32CALC').value ||
+        document.getElementById('Q33CALC').value ||
+        document.getElementById('Q34CALC').value ||
+        document.getElementById('Q35CALC').value ||
+        document.getElementById('Q36CALC').value ||
+        document.getElementById('Q37CALC').value ||
+        document.getElementById('Q38CALC').value ||
+        document.getElementById('Q39CALC').value ||
+        document.getElementById('Q40CALC').value ||
+        document.getElementById('Q41CALC').value ||
+        document.getElementById('Q42CALC').value ||
+        document.getElementById('Q43CALC').value ||
+        document.getElementById('Q44CALC').value ||
+        document.getElementById('Q45CALC').value ||
+        document.getElementById('Q46CALC').value ||
+        document.getElementById('Q47CALC').value ||
+        document.getElementById('Q48CALC').value ||
+        document.getElementById('Q49CALC').value ||
+        document.getElementById('Q50CALC').value
+         === "" ) {
+        alert('Please complete all 50 items of your Autism Assessment to get started.');
 }
     else {
         alert('Your Autism Quotient score is: ' + (
@@ -108,13 +218,6 @@ function calculateAQ(){
 
 </script>
 
-<script type = "text/javascript">
-function returnAQ(){  
-    return '4'; 
-} 
-    else if (document.getElementById('Q5CALC').value < 1 ) {alert('You do not have traits of Autism');}
-}
-</script>
 
 <title>Your Autism Quotient Answers</title>
 
@@ -215,8 +318,6 @@ var helper = (function() {
             $('<p><br/><img src=\"' + profile.image.url + '\"></p>'));
         $('#profile').append(
             $('<p>Hello ' + profile.displayName + '</p>'));
-        $('#profile').append(
-          $('<p>AQ Score: ' + returnAQ() + ' </p>'));
         if (profile.emails) {
           $('#profile').append('<br/>Emails: ');
           for (var i=0; i < profile.emails.length; i++){
@@ -398,7 +499,7 @@ function startApp() {
   </tr>
   <tr>
       <td class="allbdrCenTop"> Q8</td>
-      <td class="allbdrLtTop"> When I’m reading a story, I can find it hard to imagine what the characters might look like.</td>
+      <td class="allbdrLtTop"> When I'm reading a story, I can find it hard to imagine what the characters might look like.</td>
       <td class="allbdrCenMid">
           <input id="Q8CALC" type="text" value="" class="nobdrCenMid" style="overflow:hidden; width:93% " name="Q8CALC"/>
       </td>
@@ -741,233 +842,233 @@ function startApp() {
         <tr>
             <td>Q6</td>
             <td>I usually notice car number plates or similar strings of information.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf6">-</td>
         </tr>
         <tr>
             <td>Q7</td>
-            <td>Other people frequently tell me that what I’ve said is impolite, even though I think it is polite.</td>
-            <td id="htqf5">-</td>
+            <td>Other people frequently tell me that what I have said is impolite, even though I think it is polite.</td>
+            <td id="htqf7">-</td>
         </tr>
         <tr>
             <td>Q8</td>
-            <td>When I’m reading a story, I can find it hard to imagine what the characters might look like.</td>
-            <td id="htqf5">-</td>
+            <td>When I am reading a story, I can find it hard to imagine what the characters might look like.</td>
+            <td id="htqf8">-</td>
         </tr>
         <tr>
             <td>Q9</td>
             <td>I am fascinated by dates.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf9">-</td>
         </tr>
         <tr>
             <td>Q10</td>
-            <td>In a social group, I cant easily keep track of several different people’s conversations.</td>
-            <td id="htqf5">-</td>
+            <td>In a social group, I cant easily keep track of several different people's conversations.</td>
+            <td id="htqf10">-</td>
         </tr>
         <tr>
             <td>Q11</td>
             <td>I find social situations difficult.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf11">-</td>
         </tr>
         <tr>
             <td>Q12</td>
             <td>I tend to notice details that others do not.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf12">-</td>
         </tr>
         <tr>
             <td>Q13</td>
             <td>I would rather go to a library than a party.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf13">-</td>
         </tr>
         <tr>
             <td>Q14</td>
             <td>I find making up stories difficult.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf14">-</td>
         </tr>
         <tr>
             <td>Q15</td>
             <td>I find myself drawn more strongly to things than to people.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf15">-</td>
         </tr>
         <tr>
             <td>Q16</td>
-            <td>I tend to have very strong interests which I get upset about if I can’t pursue.</td>
-            <td id="htqf5">-</td>
+            <td>I tend to have very strong interests which I get upset about if I can't pursue.</td>
+            <td id="htqf16">-</td>
         </tr>
         <tr>
             <td>Q17</td>
-            <td>I don't 'enjoy social chit-chat.</td>
-            <td id="htqf5">-</td>
+            <td>I don't enjoy social chit-chat.</td>
+            <td id="htqf17">-</td>
         </tr>
         <tr>
             <td>Q18</td>
-            <td>When I talk, it isn’t always easy for others to get a word in edgeways.</td>
-            <td id="htqf5">-</td>
+            <td>When I talk, it isn't always easy for others to get a word in edgeways.</td>
+            <td id="htqf18">-</td>
         </tr>
         <tr>
             <td>Q19</td>
             <td>I am fascinated by numbers.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf19">-</td>
         </tr>
         <tr>
             <td>Q20</td>
-            <td>When I’m reading a story, I find it difficult to work out the characters’ intentions.</td>
-            <td id="htqf5">-</td>
+            <td>When I'm reading a story, I find it difficult to work out the characters' intentions.</td>
+            <td id="htqf20">-</td>
         </tr>
         <tr>
             <td>Q21</td>
-            <td>I don’t particularly enjoy reading fiction.</td>
-            <td id="htqf5">-</td>
+            <td>I don't particularly enjoy reading fiction.</td>
+            <td id="htqf21">-</td>
         </tr>
         <tr>
             <td>Q22</td>
             <td>I find it hard to make new friends.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf22">-</td>
         </tr>
         <tr>
             <td>Q23</td>
             <td>I notice patterns in things all the time.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf23">-</td>
         </tr>
         <tr>
             <td>Q24</td>
             <td>I would rather go to a museum than to the theatre.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf24">-</td>
         </tr>
         <tr>
             <td>Q25</td>
             <td>It upsets me if my daily routine is disturbed.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf25">-</td>
         </tr>
         <tr>
             <td>Q26</td>
-            <td>I frequently find that I don’t know how to keep a conversation going.</td>
-            <td id="htqf5">-</td>
+            <td>I frequently find that I don't know how to keep a conversation going.</td>
+            <td id="htqf26">-</td>
         </tr>
         <tr>
             <td>Q27</td>
-            <td>I find it hard to “read between the lines” when someone is talking to me.</td>
-            <td id="htqf5">-</td>
+            <td>I find it hard to "read between the lines" when someone is talking to me.</td>
+            <td id="htqf27">-</td>
         </tr>
         <tr>
             <td>Q28</td>
             <td>I usually concentrate more on the small details than on the whole picture.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf28">-</td>
         </tr>
         <tr>
             <td>Q29</td>
             <td>I am very good at remembering phone numbers.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf29">-</td>
         </tr>
         <tr>
             <td>Q30</td>
-            <td>I usually notice small changes in a situation, or a person’s appearance.</td>
-            <td id="htqf5">-</td>
+            <td>I usually notice small changes in a situation, or a person's appearance.</td>
+            <td id="htqf30">-</td>
         </tr>
         <tr>
             <td>Q31</td>
             <td>I don't know how to tell if someone listening to me is getting bored.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf31">-</td>
         </tr>
         <tr>
             <td>Q32</td>
             <td>I find it hard to do more than one thing at once.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf32">-</td>
         </tr>
         <tr>
             <td>Q33</td>
-            <td>When I talk on the phone, I’m not sure when it’s my turn to speak.</td>
-            <td id="htqf5">-</td>
+            <td>When I talk on the phone, I'm not sure when it's my turn to speak.</td>
+            <td id="htqf33">-</td>
         </tr>
         <tr>
             <td>Q34</td>
-            <td>I don't 'enjoy doing things spontaneously.</td>
-            <td id="htqf5">-</td>
+            <td>I don't enjoy doing things spontaneously.</td>
+            <td id="htqf34">-</td>
         </tr>
         <tr>
             <td>Q35</td>
             <td>I am often the last to understand the point of a joke.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf35">-</td>
         </tr>
         <tr>
             <td>Q36</td>
             <td>I find it hard to work out what someone is thinking or feeling just by looking at their face.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf36">-</td>
         </tr>
         <tr>
             <td>Q37</td>
             <td>If there is an interruption, I can't easily' switch back to what I was doing.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf37">-</td>
         </tr>
         <tr>
             <td>Q38</td>
             <td>I am bad at social chit-chat.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf38">-</td>
         </tr> <tr>
             <td>Q39</td>
             <td>People often tell me that I keep going on and on about the same thing.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf39">-</td>
         </tr>
         <tr>
             <td>Q40</td>
             <td>When I was young, I did not enjoy playing games which involving pretending with other children.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf40">-</td>
         </tr>
         <tr>
             <td>Q41</td>
             <td>I like to collect information about categories of things (e.g. types of car, types of bird, types of train, types of plant, etc.).</td>
-            <td id="htqf5">-</td>
+            <td id="htqf41">-</td>
         </tr>
         <tr>
             <td>Q42</td>
             <td>I find it difficult to imagine what it would be like to be someone else.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf42">-</td>
         </tr>
         <tr>
             <td>Q43</td>
             <td>I like to plan any activities I participate in carefully.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf43">-</td>
         </tr>
         <tr>
             <td>Q44</td>
             <td>I don't 'enjoy social occasions.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf44">-</td>
         </tr>
         <tr>
             <td>Q45</td>
-            <td>I find it difficult to work out people’s intentions.</td>
-            <td id="htqf5">-</td>
+            <td>I find it difficult to work out people's intentions.</td>
+            <td id="htqf45">-</td>
         </tr>
         <tr>
             <td>Q46</td>
             <td>New situations make me anxious.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf46">-</td>
         </tr>
         <tr>
             <td>Q47</td>
             <td>I don't 'enjoy meeting new people.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf47">-</td>
         </tr>
         <tr>
             <td>Q48</td>
             <td>I am not a good diplomat.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf48">-</td>
         </tr>
         <tr>
             <td>Q49</td>
-            <td>I am not very good at remembering people’s date of birth.</td>
-            <td id="htqf5">-</td>
+            <td>I am not very good at remembering people's date of birth.</td>
+            <td id="htqf49">-</td>
         </tr>
         <tr>
             <td>Q50</td>
             <td>I find it very hard to play games with children that involve pretending.</td>
-            <td id="htqf5">-</td>
+            <td id="htqf50">-</td>
         </tr>
         </tbody>
     </table>
 </div>
 
-<input type="button" onclick="fillHidTable()" value="Save Your Answers">
-<input type="button" onclick="calculateAQ()" value="Calculate Your Score">
+<input type="button" onClick="checkScores();fillHidTable()" value="Save Your Answers">
+<input type="button" onClick="checkScores(); calculateAQ()" value="Calculate Your Score">
 
 </div>
 </div>
