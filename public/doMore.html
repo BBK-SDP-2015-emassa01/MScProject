@@ -5,10 +5,23 @@
 <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 <meta name = "viewport" content = "width = device-width, initial-scale = 1" >
 <title>Jellibeans V1</title>
-
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <link rel= "stylesheet" href = "css/style.css">
+
+<script type="text/javascript">
+(function() {
+var cx = '008818185974073145685:ga_fmgk9gf0';
+var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+
+
+
+
+
 </head>
 <body>
 <div class = "container">
@@ -17,8 +30,7 @@
 <div class = "col-md-2"></div>
 
 <div class = "col-md-8 text-center text-uppercase">
-<h1 class = "title-super text-uppercase text-thin" OnClick = "location.href ='DoKnowGo.html'">Jellibeans</h1>
-
+<h1 class = "title-super text-uppercase text-thin">Jellibeans</h1>
 <h4>Search</h4>
 </div>
 
@@ -27,35 +39,20 @@
 </div>
 
 
+
 </div>
 
 <hr>
+ 
+ <gcse:searchbox-only resultsUrl="http://esha.mseth.co/doMore.html"></gcse:searchbox-only>
+ <gcse:searchresults-only>Search</gcse:searchresults-only>
+ 
+<!-- <div class = "row" align = "center">
+ <input type = "button" value = "Go back" onClick = "location.href ='do.html'">
+ </div>
+-->
+ 
 
-<script>
-function gcseCallback() {
-if (document.readyState != 'complete')
-return google.setOnLoadCallback(gcseCallback, true);
-google.search.cse.element.render({gname:'gsearch', div:'results', tag:'searchresults-only', attributes:{linkTarget:''}});
-var element = google.search.cse.element.getElement('gsearch');
-element.execute('Esha Massand');
-};
-window.__gcse = {
-parsetags: 'explicit',
-callback: gcseCallback
-};
-(function() {
-var cx = '008818185974073145685:ga_fmgk9gf0';
-var gcse = document.createElement('script');
-gcse.type = 'text/javascript';
-gcse.async = true;
-gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-'//www.google.com/cse/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-
-<div id="results"></div>
-
+</div>
 </body>
 </html >
