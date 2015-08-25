@@ -18,6 +18,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gc
 })();
 </script>
 
+<script type="text/javascript">
+window.onload=function(){
+var url = document.URL;
+url1 = url.slice("=");
+document.getElementById("queryStringVal").value=url1[1];
+}
+</script>
+
 
 
 
@@ -44,13 +52,22 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gc
 
 <hr>
  
- <gcse:searchbox-only resultsUrl="http://esha.mseth.co/doMore.html"></gcse:searchbox-only>
- <gcse:searchresults-only>Search</gcse:searchresults-only>
+ <div class = "img-responsive">
+ <gcse:searchbox-only resultsUrl="http://esha.mseth.co/doMore.html" queryParameterName="search"></gcse:searchbox-only>
+ </div>
  
-<!-- <div class = "row" align = "center">
+<!-- <gcse:searchresults-only></gcse:searchresults-only>-->
+ 
+<!-- <div class = "row text-muted" align = "center">
  <input type = "button" value = "Go back" onClick = "location.href ='do.html'">
  </div>
 -->
+
+ <div class = "img-responsive">
+
+<input type="text" name="go" class ="title-logo" id = "queryStringVal" value= " " style = "height: 23px; width: 94%;"><br>
+</div>
+</div>
  
 
 </div>
