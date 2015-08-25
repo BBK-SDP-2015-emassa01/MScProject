@@ -22,6 +22,12 @@ hr {
 	font-size: 20px;
 }
 
+.mediumText{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+}
+
 h1 {
     text-align: center;
 }

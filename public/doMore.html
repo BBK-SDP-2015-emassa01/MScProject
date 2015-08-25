@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang = "en>"
 <head>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <meta charset = "utf-8">
 <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 <meta name = "viewport" content = "width = device-width, initial-scale = 1" >
@@ -21,8 +23,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gc
 <script type="text/javascript">
 window.onload=function(){
 var url = document.URL;
-url1 = url.slice("=");
-document.getElementById("queryStringVal").value=url1[1];
+url1 = url.split("=");
+document.getElementById("queryStringVal").value=url1[1].replace("%20", " ");
 }
 </script>
 
@@ -43,7 +45,7 @@ document.getElementById("queryStringVal").value=url1[1];
 </div>
 
 <div class = "col-md-2 text-center text-uppercase">
-<img class = "img-responsive surprise" id = "firstSmall">
+<img data-toggle="modal" data-target="#doMore" class = "img-responsive surprise" id = "firstSmall">
 </div>
 
 
@@ -51,25 +53,49 @@ document.getElementById("queryStringVal").value=url1[1];
 </div>
 
 <hr>
- 
+<!--
  <div class = "img-responsive">
  <gcse:searchbox-only resultsUrl="http://esha.mseth.co/doMore.html" queryParameterName="search"></gcse:searchbox-only>
  </div>
  
-<!-- <gcse:searchresults-only></gcse:searchresults-only>-->
+<gcse:searchresults-only></gcse:searchresults-only>-->
  
 <!-- <div class = "row text-muted" align = "center">
  <input type = "button" value = "Go back" onClick = "location.href ='do.html'">
  </div>
 -->
 
- <div class = "img-responsive">
-
+ <div class = "img-responsive text-uppercase smallText">
+<p>Your Original Query</p>
 <input type="text" name="go" class ="title-logo" id = "queryStringVal" value= " " style = "height: 23px; width: 94%;"><br>
-</div>
-</div>
- 
+
+<input type="button" value="Search" onclick="location.href='http://www.google.com' +'#q=' + queryStringVal.value" style="margin-top: 20px;" >
 
 </div>
+
+
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade text-center" id="doMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">DO</h4>
+            </div>
+            <div class="modal-body">
+            <img class="img-responsive surprise text-center" id = "firstSmall">
+            <br>The DO page guides you through a query to do something on the web like, buy a cinema ticket.
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
 </html >
