@@ -38,7 +38,9 @@ document.getElementById("queryStringVal").value=url2;
 <div class = "container">
 <input type="button" value="Reload Page" onClick="window.location.reload()" style="margin-top: 20px;">
 <div class = "row">
-<div class = "col-md-2"></div>
+
+<div class = "col-md-2">
+</div>
 
 <div class = "col-md-8 text-center text-uppercase">
 <h1 class = "title-super text-uppercase text-thin">Jellibeans</h1>
@@ -66,17 +68,41 @@ document.getElementById("queryStringVal").value=url2;
  </div>
 -->
 
- <div class = "img-responsive smallText">
-<p>Your Original Query</p>
-<input type="text" name="go" class ="title-logo" id = "queryStringVal" value= " " style = "height: 53px; width: 94%;"><br>
-
-<input type="button" value="Search" onclick="location.href='http://www.google.com' +'#q=' + queryStringVal.value" style="margin-top: 20px;" >
-
-</div>
-
-
-</div>
-</div>
+ <div class = "img-responsive smallText col-md-12">
+    <sp>Your Original Query was:</sp>
+ </div>
+ 
+ <div class = "col-md-12">
+    <input type="text" name="do1" class ="title-logo" id = "queryStringVal" value= " " style = "height: 53px; width: 90%;" >
+ </div>
+ 
+ <div class = "col-md-12">
+ <br><br>
+ </div>
+ 
+ <div class = "img-responsive smallText col-md-12">
+ <sp>What type of information do you want to retrieve from your search?</sp>
+ </div>
+ 
+ <div class = "col-md-12">
+ <input type="text" name="do2" class ="title-logo" id = "infoReturned" value = "" style = "height: 53px; width: 90%;" >
+ </div>
+ 
+ <div class = "col-md-12">
+  <br><br>
+ </div>
+ 
+ <div class = "img-responsive smallText col-md-12">
+ <sp>Rephrase your Search Query here: </sp>
+ </div>
+ 
+ <div class = "col-md-12">
+ <input type="text" name="do3" class ="title-logo" id = "rephrase"  style = "height: 53px; width: 90%;" >
+ </div>
+ 
+ <div class= "col-md-12">
+ <input type="button" value="Jellibean Search" onclick="location.href='http://www.google.com' + '#q=' + queryStringVal.value + '+' + infoReturned.value + '+' + rephrase.value"  style="margin-top: 20px;" >
+ </div>
 
 <!-- Modal -->
 <div class="modal fade text-center" id="doMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -95,7 +121,7 @@ document.getElementById("queryStringVal").value=url2;
         </div>
     </div>
 
-
+</div>
 
 
 </body>
