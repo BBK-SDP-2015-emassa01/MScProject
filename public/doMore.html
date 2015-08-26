@@ -24,7 +24,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gc
 window.onload=function(){
 var url = document.URL;
 url1 = url.split("=");
-document.getElementById("queryStringVal").value=url1[1].replace("%20", " ");
+url2 = url1[1].split("%20").join(" ");
+document.getElementById("queryStringVal").value=url2;
 }
 </script>
 
@@ -67,7 +68,7 @@ document.getElementById("queryStringVal").value=url1[1].replace("%20", " ");
 
  <div class = "img-responsive text-uppercase smallText">
 <p>Your Original Query</p>
-<input type="text" name="go" class ="title-logo" id = "queryStringVal" value= " " style = "height: 23px; width: 94%;"><br>
+<input type="text" name="go" class ="title-logo" id = "queryStringVal" value= " " style = "height: 53px; width: 94%;"><br>
 
 <input type="button" value="Search" onclick="location.href='http://www.google.com' +'#q=' + queryStringVal.value" style="margin-top: 20px;" >
 
