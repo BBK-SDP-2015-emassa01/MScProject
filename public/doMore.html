@@ -35,8 +35,10 @@ document.getElementById("queryStringVal").value=url2;
 
 </head>
 <body>
-<div class = "container">
-<input type="button" value="Reload Page" onClick="window.location.reload()" style="margin-top: 20px;">
+<div class = "container text-center ">
+
+<!--<input type="button" value="Reload Page" onClick="window.location.reload()" style="margin-top: 20px;">-->
+
 <div class = "row">
 
 <div class = "col-md-2">
@@ -73,7 +75,7 @@ document.getElementById("queryStringVal").value=url2;
  </div>
  
  <div class = "col-md-12">
-    <input type="text" name="do1" class ="title-logo" id = "queryStringVal" value= " " style = "height: 53px; width: 90%;" >
+    <input type="text" name="do1" class ="title-logo" id = "queryStringVal" value= " " style = "height: 30px; width: 60%;" >
  </div>
  
  <div class = "col-md-12">
@@ -85,7 +87,7 @@ document.getElementById("queryStringVal").value=url2;
  </div>
  
  <div class = "col-md-12">
- <input type="text" name="do2" class ="title-logo" id = "infoReturned" value = "" style = "height: 53px; width: 90%;" >
+ <input type="text" name="do2" class ="title-logo" id = "infoReturned" value = "" style = "height: 30px; width: 60%;" >
  </div>
  
  <div class = "col-md-12">
@@ -97,11 +99,15 @@ document.getElementById("queryStringVal").value=url2;
  </div>
  
  <div class = "col-md-12">
- <input type="text" name="do3" class ="title-logo" id = "rephrase"  style = "height: 53px; width: 90%;" >
+ <input type="text" name="do3" class ="title-logo" id = "rephrase"  style = "height: 30px; width: 60%;" >
+ </div>
+ 
+ <div class = "col-md-12">
+ <br><br>
  </div>
  
  <div class= "col-md-12">
- <input type="button" value="Jellibean Search" onclick="location.href='http://www.google.com' + '#q=' + queryStringVal.value + '+' + infoReturned.value + '+' + rephrase.value"  style="margin-top: 20px;" >
+ <input type="button" value="Jellibeans Search" onclick="location.href='http://www.google.com' + '#q=' + queryStringVal.value + '+' + infoReturned.value + '+' + rephrase.value"  style= "margin-top: 20px; height: 53px; width: 30%; font-size: 20px;" >
  </div>
 
 <!-- Modal -->
