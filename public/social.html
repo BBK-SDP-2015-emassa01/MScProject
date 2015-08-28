@@ -6,7 +6,7 @@
 <meta charset = "utf-8">
 <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 <meta name = "viewport" content = "width = device-width, initial-scale = 1" >
-<title>Know Something</title>
+<title>Social Search</title>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <link rel= "stylesheet" href = "css/style.css">
@@ -21,7 +21,7 @@
             <h4>Search</h4>
         </div>
         <div class = "col-md-2 text-center text-uppercase">
-            <img data-toggle="modal" data-target="#know1" class = "img-responsive surprise" id = "secondSmall">
+            <img data-toggle="modal" data-target="#social1" class = "img-responsive surprise" id = "fourthSmall">
         </div>
         <div class = "row">
             <div class = "col-md-12">
@@ -32,7 +32,7 @@
 
         <div class = "row">
             <div class = "col-md-12">
-            What do you want to <b>know</b> from the web?
+            <b>Who</b> are you searching for on the web?
         </div>
     </div>
     <div class = "row">
@@ -41,22 +41,22 @@
         </div>
     
     <input type="button" value="Search in Google" class = "title-logo title-small" onClick= "location.href='http://www.google.com' +'#q=' + go.value">
-    <input type="button" value="Jellibean Search" class = "title-logo title-small" onClick = "location.href='knowMore.html'+ '?query='+ go.value">
+    <input type="button" value="Jellibean Search" class = "title-logo title-small" onClick = "location.href='socialMore.html'+ '?query='+ go.value">
     </form>
     </div>
 </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade text-center" id="know1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade text-center" id="social1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">KNOW</h4>
+                <h4 class="modal-title" id="myModalLabel">SOCIAL</h4>
             </div>
         <div class="modal-body">
-            <img class="img-responsive surprise text-center" id = "secondSmall">
-            <br>The Yellow circle means that you want to KNOW something from the web.
+            <img class="img-responsive surprise text-center" id = "fourthSmall">
+            <br>The Red circle means that you are doing a social search on the web.
         </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
