@@ -11,13 +11,28 @@
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <link rel= "stylesheet" href = "css/style.css">
 
+
 <script type="text/javascript">
-(function() {
+function gcseCallback() {
+// key to search
+var key = $("#txtkeyword").val();
+if (document.readyState != 'complete')
+return google.setOnLoadCallback(gcseCallback, true);
+google.search.cse.element.render({ webSearchResultSetSize: 4, gname: 'gsearch', div: 'google-search', tag: 'searchresults-only', attributes: { linkTarget: '_blank' } });
+var element = google.search.cse.element.getElement('gsearch');
+element.execute(key);
+};
+(function () {
 var cx = '008818185974073145685:ga_fmgk9gf0';
 var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+gcse.src = (document.location.protocol == 'https' ? 'https:' : 'https:') +
+'//www.google.com/cse/cse.js?cx=' + cx;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
 })();
+</script>
+
+<script type="text/javascript">
+function functionOne() { alert('You clicked the top text'); }
 </script>
 
 <script type="text/javascript">
@@ -29,6 +44,19 @@ document.getElementById("queryStringVal").value=url2;
 }
 </script>
 
+<script>
+(function() {
+var cx = 'YOUR_ENGINE_ID';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+'//cse.google.com/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+
 
 
 
@@ -37,7 +65,6 @@ document.getElementById("queryStringVal").value=url2;
 <body>
 <div class = "container text-center ">
 
-<!--<input type="button" value="Reload Page" onClick="window.location.reload()" style="margin-top: 20px;">-->
 
 <div class = "row">
 
@@ -64,11 +91,8 @@ document.getElementById("queryStringVal").value=url2;
  </div>
  
 <gcse:searchresults-only></gcse:searchresults-only>-->
- 
-<!-- <div class = "row text-muted" align = "center">
- <input type = "button" value = "Go back" onClick = "location.href ='do.html'">
- </div>
--->
+
+
 
  <div class = "img-responsive smallText col-md-12">
     <sp>Your Original Query was:</sp>
@@ -107,8 +131,29 @@ document.getElementById("queryStringVal").value=url2;
  </div>
  
  <div class= "col-md-12">
- <input type="button" value="Jellibeans Search" onclick="location.href='http://www.google.com' + '#q=' + queryStringVal.value + '+' + infoReturned.value + '+' + rephrase.value"  style= "margin-top: 20px; height: 53px; width: 30%; font-size: 20px;" >
+ <input type="button" value="Jellibeans OldSearch" onclick="location.href='http://www.google.com' + '#q=' + queryStringVal.value + '+' + infoReturned.value + '+' + rephrase.value"  style= "margin-top: 20px; height: 53px; width: 30%; font-size: 20px;" >
  </div>
+ 
+ <div class= "col-md-12">
+ <input type="button" value="Jellibeans Search" onclick="gcseCallback()";  style= "margin-top: 20px; height: 53px; width: 30%; font-size: 20px;" >
+ <p><a href="#" onClick="functionOne();">Top Text</a></p>
+ </div>
+ 
+ <!--
+ 
+ <div style="border: 1px solid blue;">
+ Area 1 (for example a sidebar)
+ <gcse:searchbox></gcse:searchbox>
+ </div>
+ 
+ <div style="border: 1px solid red;">
+ Area 2 (for example main area of the page)
+ <gcse:searchresults></gcse:searchresults>
+ </div>
+ 
+ -->
+
+<gcse:searchbox-only resultsUrl="http://esha.mseth.co/doMore2.html"></gcse:searchbox-only>
 
 <!-- Modal -->
 <div class="modal fade text-center" id="doMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
