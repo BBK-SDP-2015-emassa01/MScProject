@@ -11,6 +11,27 @@
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <link rel= "stylesheet" href = "css/style.css">
 
+<!--
+<script type="text/javascript">
+function gcseCallback() {
+// key to search
+var key = $("#txtkeyword").val();
+if (document.readyState != 'complete')
+return google.setOnLoadCallback(gcseCallback, true);
+google.search.cse.element.render({ webSearchResultSetSize: '4', gname: 'gsearch', div: 'google-search', tag: 'searchresults-only', attributes: { linkTarget: '_blank' } });
+var element = google.search.cse.element.getElement('gsearch');
+element.execute(key);
+};
+(function () {
+var cx = '008818185974073145685:ga_fmgk9gf0';
+var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+gcse.src = (document.location.protocol == 'https' ? 'https:' : 'https:') +
+'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+-->
+
 <script type="text/javascript">
 window.onload=function(){
 var url = document.URL;
@@ -20,8 +41,44 @@ document.getElementById("queryStringVal").value=url2;
 }
 </script>
 
+<!--
+<script>
+function gcseCallback() {
+// key to search
+var key = $("#txtkeyword").val();
+if (document.readyState != 'complete')
+return google.setOnLoadCallback(gcseCallback, true);
+google.search.cse.element.render({ webSearchResultSetSize: 'large', gname: 'gsearch', div: 'google-search', tag: 'searchresults-only', attributes: { linkTarget: '_blank' } });
+var element = google.search.cse.element.getElement('gsearch');
+element.execute(key);
+};
+
+(function() {
+var cx = '008818185974073145685:ga_fmgk9gf0';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+'//cse.google.com/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+-->
+
 
 <script type="text/javascript">
+<!--function gcseCallback() {
+if (document.readyState != 'complete')
+return google.setOnLoadCallback(gcseCallback, true);
+google.search.cse.element.render({gname:'gsearch', div:'results', tag:'searchresults-only', attributes:{linkTarget:''}});
+var element = google.search.cse.element.getElement('gsearch');
+element.execute(queryStringVal.value);
+};
+window.__gcse = {
+parsetags: 'explicit',
+callback: gcseCallback
+};-->
 (function() {
 var cx =  '008818185974073145685:ga_fmgk9gf0';
 var gcse = document.createElement('script');
@@ -34,10 +91,18 @@ s.parentNode.insertBefore(gcse, s);
 })();
 </script>
 
+
+
+
+
+
 </head>
 <body>
 <div class = "container text-center ">
+
+
 <div class = "row">
+
 <div class = "col-md-2">
 </div>
 
@@ -55,6 +120,14 @@ s.parentNode.insertBefore(gcse, s);
 </div>
 
 <hr>
+<!--
+ <div class = "img-responsive">
+ <gcse:searchbox-only resultsUrl="http://esha.mseth.co/doMore.html" queryParameterName="search"></gcse:searchbox-only>
+ </div>
+ 
+<gcse:searchresults-only></gcse:searchresults-only>-->
+
+
 
  <div class = "img-responsive smallText col-md-12">
     <sp>Your Original Query was:</sp>
@@ -97,14 +170,28 @@ s.parentNode.insertBefore(gcse, s);
 
  </div>
  
-<div id="results">
-<gcse:searchbox ></gcse:searchbox>
+ <!--
+ 
+ <div style="border: 1px solid blue;">
+ Area 1 (for example a sidebar)
+ <gcse:searchbox></gcse:searchbox>
+ </div>
+ 
+ <div style="border: 1px solid red;">
+ Area 2 (for example main area of the page)
+ <gcse:searchresults></gcse:searchresults>
+ </div>
+ 
 
+
+<gcse:searchbox-only webSearchResultSetSize= "4"></gcse:searchbox-only>
+
+-->
+
+<div id="results">
+<gcse:searchresults webSearchResultSetSize= "4"></gcse:searchbox-only>
 
 </div>
-<gcse:searchresults webSearchResultSetSize= "3"></gcse:searchresults>
-
-
 
 <!-- Modal -->
 <div class="modal fade text-center" id="doMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
