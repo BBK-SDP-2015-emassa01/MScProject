@@ -16,6 +16,7 @@ window.onload=function(){
 var url = document.URL;
 url1 = url.split("=");
 url2 = url1[1].split("%20").join(" ");
+url2 = url2.split("+").join(" ");
 document.getElementById("queryStringVal").value=url2;
 }
 </script>
@@ -67,53 +68,16 @@ s.parentNode.insertBefore(gcse, s);
 <hr>
 
  <div class = "img-responsive smallText col-md-12">
-    <sp>Your Original Query was:</sp>
+    <sp>Your Jellibean Query was:</sp>
  </div>
  
  <div class = "col-md-12">
     <input type="text" name="do1" class ="title-logo" id ="queryStringVal" value = "" style = "height: 30px; width: 60%;" >
  </div>
- 
- <div class = "col-md-12">
- <br><br>
- </div>
- 
  <div class = "img-responsive smallText col-md-12">
- <sp>What type of information do you want to retrieve from your search?</sp>
+ <input type="button" value="Show Results" onClick="window.location.reload()" style="margin-top: 20px;">
  </div>
  
- <div class = "col-md-12">
- <input type="text" name="do2" class ="title-logo" id = "infoReturned" value = "" style = "height: 30px; width: 60%;" >
- </div>
- 
- <div class = "col-md-12">
-  <br><br>
- </div>
- 
- <div class = "img-responsive smallText col-md-12">
- <sp>Rephrase your Search Query here: </sp>
- </div>
- 
- <div class = "col-md-12">
- <input type="text" name="do3" class ="title-logo" id = "rephrase"  style = "height: 30px; width: 60%;" >
- </div>
- 
- <div class = "col-md-12">
- <br><br>
- </div>
- 
- <div class= "col-md-12">
- <input type="button" value="Jellibeans Search" onclick="location.href='http://www.google.com' + '#q=' + queryStringVal.value + '+' + infoReturned.value + '+' + rephrase.value";  style= "margin-top: 20px; height: 53px; width: 30%; font-size: 20px;" >
-
- </div>
- 
- <!--
- 
-<div id="results">
-<gcse:searchbox ></gcse:searchbox>
-<gcse:searchresults webSearchResultSetSize= "3"></gcse:searchresults>
-</div>
--->
 <div id="results"></div>
 
 

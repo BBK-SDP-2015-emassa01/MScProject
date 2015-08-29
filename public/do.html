@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<meta charset = "utf-8">
-<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-<meta name = "viewport" content = "width = device-width, initial-scale = 1" >
-<title>Do Something</title>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-<link rel = "stylesheet" href = "css/bootstrap.css">
-<link rel= "stylesheet" href = "css/style.css">
-
-</head>
-<body>
-<div class = "container">
-<div class = "row">
-    <div class = "col-md-2"></div>
-        <div class = "col-md-8 text-center text-uppercase">
-            <h1 class = "title-super text-uppercase text-thin">Jellibeans</h1>
-            <h4>Search</h4>
-        </div>
-        <div class = "col-md-2 text-center text-uppercase">
-            <img data-toggle="modal" data-target="#do1" class = "img-responsive surprise" id = "firstSmall">
-        </div>
-        <div class = "row">
-            <div class = "col-md-12">
-                <hr>
-            </div>
-        </div>
-        <form action="queryString.asp" method="get" target="_blank" class = "title-lesssuper text-thin text-center ">
-
-        <div class = "row">
-            <div class = "col-md-12">
-            What do you want to <b>do</b> on the web?
-        </div>
-    </div>
-    <div class = "row">
-        <div class = "col-md-12">
-            <input type="text" name="go" class = "title-logo" style = "height: 52px; width: 700px;"><br>
-        </div>
-    
-    <input type="button" value="Search in Google" class = "title-logo title-small" onClick= "location.href='http://www.google.com' +'#q=' + go.value">
-    <input type="button" value="Jellibean Search" class = "title-logo title-small" onClick = "location.href='doMore.html'+ '?query='+ go.value">
-    </form>
-    </div>
-</div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade text-center" id="do1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">DO</h4>
-            </div>
-        <div class="modal-body">
-            <img class="img-responsive surprise text-center" id = "firstSmall">
-            <br>The Blue circle means that you want to DO something on the web.
-        </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    </div>
-</div>
-
-</div>
-
-</body>
-</html>
+    <head>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <meta charset = "utf-8">
+            <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+                <meta name = "viewport" content = "width = device-width, initial-scale = 1" >
+                    <title>Do Something</title>
+                    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+                        <link rel = "stylesheet" href = "css/bootstrap.css">
+                        <link rel= "stylesheet" href = "css/style.css">
+                        
+                        </head>
+                        <body>
+                        <div class = "container">
+                        <div class = "row">
+                        <div class = "col-md-2"></div>
+                        <div class = "col-md-8 text-center text-uppercase">
+                        <h1 class = "title-super text-uppercase text-thin">Jellibeans</h1>
+                        <h4>Search</h4>
+                        </div>
+                        <div class = "col-md-2 text-center text-uppercase">
+                        <img data-toggle="modal" data-target="#do1" class = "img-responsive surprise" id = "firstSmall">
+                        </div>
+                        <div class = "row">
+                        <div class = "col-md-12">
+                        <hr>
+                        </div>
+                        </div>
+                        <form action="queryString.asp" method="get" target="_blank" class = "title-lesssuper text-thin text-center ">
+                        
+                        <div class = "row">
+                        <div class = "col-md-12">
+                        What do you want to <b>do</b> on the web?
+                        </div>
+                        </div>
+                        <div class = "row">
+                        <div class = "col-md-12">
+                        <input type="text" name="go" class = "title-logo" style = "height: 52px; width: 700px;"><br>
+                        </div>
+                        
+                        <div class = "col-md-12">
+                        What type of information do you want to retrieve from your search?
+                        </div>
+                        <div class = "col-md-12">
+                        <input type="text" name="go2" class = "title-logo" style = "height: 52px; width: 700px;"><br>
+                        </div>
+                        
+                        <div class = "col-md-12">
+                        Rephrase your Search Query here:
+                        </div>
+                        <div class = "col-md-12">
+                        <input type="text" name="go3" class = "title-logo" style = "height: 52px; width: 700px;"><br>
+                        </div>
+                        
+                        <input type="button" value="Search in Google" class = "title-logo title-small" onClick= "location.href='http://www.google.com' +'#q=' + go.value">
+                        <input type="button" value="Jellibean Search" class = "title-logo title-small" onClick = "location.href='doMore.html'+ '?query='+ go.value + '+' + go2.value + '+' + go3.value">
+                        </form>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade text-center" id="do1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">DO</h4>
+                        </div>
+                        <div class="modal-body">
+                        <img class="img-responsive surprise text-center" id = "firstSmall">
+                        <br>The Blue circle means that you want to DO something on the web.
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                        
+                        </div>
+                        
+                        </body>
+                        </html>
