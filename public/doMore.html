@@ -20,10 +20,20 @@ document.getElementById("queryStringVal").value=url2;
 }
 </script>
 
-
-<script type="text/javascript">
+<script>
+function gcseCallback() {
+if (document.readyState != 'complete')
+return google.setOnLoadCallback(gcseCallback, true);
+google.search.cse.element.render({gname:'gsearch', div:'results', tag:'searchresults-only', attributes:{linkTarget:'', webSearchResultSetSize: "3"}});
+var element = google.search.cse.element.getElement('gsearch');
+element.execute(queryStringVal.value);
+};
+window.__gcse = {
+parsetags: 'explicit',
+callback: gcseCallback
+};
 (function() {
-var cx =  '008818185974073145685:ga_fmgk9gf0';
+var cx = '008818185974073145685:ga_fmgk9gf0';
 var gcse = document.createElement('script');
 gcse.type = 'text/javascript';
 gcse.async = true;
@@ -61,7 +71,7 @@ s.parentNode.insertBefore(gcse, s);
  </div>
  
  <div class = "col-md-12">
-    <input type="text" name="do1" class ="title-logo" id = "queryStringVal" value= " " style = "height: 30px; width: 60%;" >
+    <input type="text" name="do1" class ="title-logo" id ="queryStringVal" value = "" style = "height: 30px; width: 60%;" >
  </div>
  
  <div class = "col-md-12">
@@ -97,12 +107,14 @@ s.parentNode.insertBefore(gcse, s);
 
  </div>
  
+ <!--
+ 
 <div id="results">
 <gcse:searchbox ></gcse:searchbox>
-
-
-</div>
 <gcse:searchresults webSearchResultSetSize= "3"></gcse:searchresults>
+</div>
+-->
+<div id="results"></div>
 
 
 
