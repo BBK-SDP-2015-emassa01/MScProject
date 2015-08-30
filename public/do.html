@@ -11,6 +11,13 @@
                         <link rel = "stylesheet" href = "css/bootstrap.css">
                         <link rel= "stylesheet" href = "css/style.css">
                         
+                        <script type="text/javascript">
+                        function change();
+                        {
+                        document.getElementById("andButton").value="?bools=AND";
+                        }
+                        </script>
+                        
                         </head>
                         <body>
                         <div class = "container">
@@ -31,31 +38,41 @@
                         <form action="queryString.asp" method="get" target="_blank" class = "title-lesssuper text-thin text-center ">
                         
                         <div class = "row">
-                        <div class = "col-md-12">
+                        <div class = "col-md-2">
+                        <input type="button" value="AND" id="andButton" class = "title-logo smallText" onClick= "change()">
+                        </div>
+                        
+                        <div class = "col-md-8 smallText">
                         What do you want to <b>do</b> on the web?
                         </div>
+                        
+                        <div class = "col-md-2"></div>
+                        
                         </div>
                         <div class = "row">
-                        <div class = "col-md-12">
-                        <input type="text" name="go" class = "title-logo" style = "height: 52px; width: 700px;"><br>
+                        <div class = "col-md-12 smallText">
+                        <input type="text" name="go" class = "title-logo" style = "height: 32px; width: 500px;"><br>
+                        <br>
                         </div>
                         
-                        <div class = "col-md-12">
+                        <div class = "col-md-12 smallText">
                         What type of information do you want to retrieve from your search?
                         </div>
-                        <div class = "col-md-12">
-                        <input type="text" name="go2" class = "title-logo" style = "height: 52px; width: 700px;"><br>
+                        <div class = "col-md-12 smallText">
+                        <input type="text" name="go2" class = "title-logo" style = "height: 32px; width: 500px;"><br>
+                        <br>
                         </div>
                         
-                        <div class = "col-md-12">
+                        <div class = "col-md-12 smallText">
                         Rephrase your Search Query here:
                         </div>
-                        <div class = "col-md-12">
-                        <input type="text" name="go3" class = "title-logo" style = "height: 52px; width: 700px;"><br>
+                        <div class = "col-md-12 smallText">
+                        <input type="text" name="go3" class = "title-logo" style = "height: 32px; width: 500px;"><br>
+                        <br>
                         </div>
                         
-                        <input type="button" value="Search in Google" class = "title-logo title-small" onClick= "location.href='http://www.google.com' +'#q=' + go.value">
-                        <input type="button" value="Jellibean Search" class = "title-logo title-small" onClick = "location.href='doMore.html'+ '?query='+ go.value + '+' + go2.value + '+' + go3.value">
+                        <input type="button" value="Search in Google" class = "title-logo smallText" onClick= "location.href='http://www.google.com' +'#q=' + go.value">
+                        <input type="button" value="Jellibean Search" class = "title-logo smallText" onClick = "location.href='doMore.html'+ '?query='+ go.value + '+' + go2.value + '+' + go3.value + '+' + andButton.value">
                         </form>
                         </div>
                         </div>
