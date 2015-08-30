@@ -12,36 +12,47 @@
 <link rel= "stylesheet" href = "css/style.css">
 
 <script type="text/javascript">
-(function() {
-var cx = '008818185974073145685:ga_fmgk9gf0';
-var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-
-<script type="text/javascript">
 window.onload=function(){
 var url = document.URL;
 url1 = url.split("=");
 url2 = url1[1].split("%20").join(" ");
+url2 = url2.split("+").join(" ");
 document.getElementById("queryStringVal").value=url2;
 }
 </script>
 
-
-
-
+<script>
+function gcseCallback() {
+if (document.readyState != 'complete')
+return google.setOnLoadCallback(gcseCallback, true);
+google.search.cse.element.render({gname:'gsearch', div:'results', tag:'searchresults-only', attributes:{linkTarget:'', webSearchResultSetSize: "3"}});
+var element = google.search.cse.element.getElement('gsearch');
+element.execute(queryStringVal.value);
+};
+window.__gcse = {
+parsetags: 'explicit',
+callback: gcseCallback
+};
+(function() {
+var cx = '008818185974073145685:ga_fmgk9gf0';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
 
 </head>
 <body>
 <div class = "container text-center ">
-
-<!--<input type="button" value="Reload Page" onClick="window.location.reload()" style="margin-top: 20px;">-->
-
 <div class = "row">
+<div class = "col-md-2 title-lesssuper row img-responsive" align="right">
+<a href = "DoKnowGo.html" class = "smallText text-uppercase" style="
+margin-top:80px;" >Dashboard</a>
 
-<div class = "col-md-2">
 </div>
 
 <div class = "col-md-8 text-center text-uppercase">
@@ -58,57 +69,21 @@ document.getElementById("queryStringVal").value=url2;
 </div>
 
 <hr>
-<!--
- <div class = "img-responsive">
- <gcse:searchbox-only resultsUrl="http://esha.mseth.co/doMore.html" queryParameterName="search"></gcse:searchbox-only>
- </div>
- 
-<gcse:searchresults-only></gcse:searchresults-only>-->
- 
-<!-- <div class = "row text-muted" align = "center">
- <input type = "button" value = "Go back" onClick = "location.href ='do.html'">
- </div>
--->
 
  <div class = "img-responsive smallText col-md-12">
-    <sp>Your Original Query was:</sp>
+    <sp>Your Jellibean Query was:</sp>
  </div>
  
  <div class = "col-md-12">
-    <input type="text" name="do1" class ="title-logo" id = "queryStringVal" value= " " style = "height: 30px; width: 60%;" >
+    <input type="text" name="social1" class ="title-logo" id ="queryStringVal" value = "" style = "height: 30px; width: 60%;" >
  </div>
- 
- <div class = "col-md-12">
- <br><br>
- </div>
- 
  <div class = "img-responsive smallText col-md-12">
- <sp>What type of information do you want to retrieve from your search?</sp>
+ <input type="button" value="Show Results" onClick="window.location.reload()" style="margin-top: 20px;">
  </div>
  
- <div class = "col-md-12">
- <input type="text" name="do2" class ="title-logo" id = "infoReturned" value = "" style = "height: 30px; width: 60%;" >
- </div>
- 
- <div class = "col-md-12">
-  <br><br>
- </div>
- 
- <div class = "img-responsive smallText col-md-12">
- <sp>Rephrase your Search Query here: </sp>
- </div>
- 
- <div class = "col-md-12">
- <input type="text" name="do3" class ="title-logo" id = "rephrase"  style = "height: 30px; width: 60%;" >
- </div>
- 
- <div class = "col-md-12">
- <br><br>
- </div>
- 
- <div class= "col-md-12">
- <input type="button" value="Jellibeans Search" onclick="location.href='http://www.google.com' + '#q=' + queryStringVal.value + '+' + infoReturned.value + '+' + rephrase.value"  style= "margin-top: 20px; height: 53px; width: 30%; font-size: 20px;" >
- </div>
+<div id="results"></div>
+
+
 
 <!-- Modal -->
 <div class="modal fade text-center" id="socialMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -119,7 +94,7 @@ document.getElementById("queryStringVal").value=url2;
             </div>
             <div class="modal-body">
             <img class="img-responsive surprise text-center" id = "fourthSmall">
-            <br>The SOCIAL page guides you through forming a social query on the web like, search for a person.
+            <br>The SOCIAL page guides you to form a query about a person or people.
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
