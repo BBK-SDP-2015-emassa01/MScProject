@@ -18,9 +18,6 @@
   <meta name="google-signin-client_id" content="677279234093-scr4q3jm5ekbgmtqr8eanv61vgurrcut.apps.googleusercontent.com"></meta>
 <script type="text/javascript">
 
-/**
-*This part exports to excel
-*/
 function fillHidTable(){
     var htqf; //-- hidden field
     var rf; //-- retrieved field
@@ -47,120 +44,122 @@ var tableToExcel = (function() {
 <script type = "text/javascript">
     function checkScores(){
     if (
-    document.getElementById('Q1CALC').value ||
-    document.getElementById('Q2CALC').value ||
-    document.getElementById('Q3CALC').value ||
-    document.getElementById('Q4CALC').value ||
-    document.getElementById('Q5CALC').value ||
-    document.getElementById('Q6CALC').value ||
-    document.getElementById('Q7CALC').value ||
-    document.getElementById('Q8CALC').value ||
-    document.getElementById('Q9CALC').value ||
-    document.getElementById('Q10CALC').value ||
-    document.getElementById('Q11CALC').value ||
-    document.getElementById('Q12CALC').value ||
-    document.getElementById('Q13CALC').value ||
-    document.getElementById('Q14CALC').value ||
-    document.getElementById('Q15CALC').value ||
-    document.getElementById('Q16CALC').value ||
-    document.getElementById('Q17CALC').value ||
-    document.getElementById('Q18CALC').value ||
-    document.getElementById('Q19CALC').value ||
-    document.getElementById('Q20CALC').value ||
-    document.getElementById('Q21CALC').value ||
-    document.getElementById('Q22CALC').value ||
-    document.getElementById('Q23CALC').value ||
-    document.getElementById('Q24CALC').value ||
-    document.getElementById('Q25CALC').value ||
-    document.getElementById('Q26CALC').value ||
-    document.getElementById('Q27CALC').value ||
-    document.getElementById('Q28CALC').value ||
-    document.getElementById('Q29CALC').value ||
-    document.getElementById('Q30CALC').value ||
-    document.getElementById('Q31CALC').value ||
-    document.getElementById('Q32CALC').value ||
-    document.getElementById('Q33CALC').value ||
-    document.getElementById('Q34CALC').value ||
-    document.getElementById('Q35CALC').value ||
-    document.getElementById('Q36CALC').value ||
-    document.getElementById('Q37CALC').value ||
-    document.getElementById('Q38CALC').value ||
-    document.getElementById('Q39CALC').value ||
-    document.getElementById('Q40CALC').value ||
-    document.getElementById('Q41CALC').value ||
-    document.getElementById('Q42CALC').value ||
-    document.getElementById('Q43CALC').value ||
-    document.getElementById('Q44CALC').value ||
-    document.getElementById('Q45CALC').value ||
-    document.getElementById('Q46CALC').value ||
-    document.getElementById('Q47CALC').value ||
-    document.getElementById('Q48CALC').value ||
-    document.getElementById('Q49CALC').value ||
-    document.getElementById('Q50CALC').value
-    > 1 ) {
-    alert('You have entered a number that is not one of the possible options. Check your answers and try again.');
+    document.getElementById('Q1CALC').value > 1 ||
+    document.getElementById('Q2CALC').value > 1 ||
+    document.getElementById('Q3CALC').value > 1 ||
+    document.getElementById('Q4CALC').value > 1 ||
+    document.getElementById('Q5CALC').value > 1 ||
+    document.getElementById('Q6CALC').value > 1 ||
+    document.getElementById('Q7CALC').value > 1 ||
+    document.getElementById('Q8CALC').value > 1 ||
+    document.getElementById('Q9CALC').value > 1 ||
+    document.getElementById('Q10CALC').value > 1 ||
+    document.getElementById('Q11CALC').value > 1 ||
+    document.getElementById('Q12CALC').value > 1 ||
+    document.getElementById('Q13CALC').value > 1 ||
+    document.getElementById('Q14CALC').value > 1 ||
+    document.getElementById('Q15CALC').value > 1 ||
+    document.getElementById('Q16CALC').value > 1 ||
+    document.getElementById('Q17CALC').value > 1 ||
+    document.getElementById('Q18CALC').value > 1 ||
+    document.getElementById('Q19CALC').value > 1 ||
+    document.getElementById('Q20CALC').value > 1 ||
+    document.getElementById('Q21CALC').value > 1 ||
+    document.getElementById('Q22CALC').value > 1 ||
+    document.getElementById('Q23CALC').value > 1 ||
+    document.getElementById('Q24CALC').value > 1 ||
+    document.getElementById('Q25CALC').value > 1 ||
+    document.getElementById('Q26CALC').value > 1 ||
+    document.getElementById('Q27CALC').value > 1 ||
+    document.getElementById('Q28CALC').value > 1 ||
+    document.getElementById('Q29CALC').value > 1 ||
+    document.getElementById('Q30CALC').value > 1 ||
+    document.getElementById('Q31CALC').value > 1 ||
+    document.getElementById('Q32CALC').value > 1 ||
+    document.getElementById('Q33CALC').value > 1 ||
+    document.getElementById('Q34CALC').value > 1 ||
+    document.getElementById('Q35CALC').value > 1 ||
+    document.getElementById('Q36CALC').value > 1 ||
+    document.getElementById('Q37CALC').value > 1 ||
+    document.getElementById('Q38CALC').value > 1 ||
+    document.getElementById('Q39CALC').value > 1 ||
+    document.getElementById('Q40CALC').value > 1 ||
+    document.getElementById('Q41CALC').value > 1 ||
+    document.getElementById('Q42CALC').value > 1 ||
+    document.getElementById('Q43CALC').value > 1 ||
+    document.getElementById('Q44CALC').value > 1 ||
+    document.getElementById('Q45CALC').value > 1 ||
+    document.getElementById('Q46CALC').value > 1 ||
+    document.getElementById('Q47CALC').value > 1 ||
+    document.getElementById('Q48CALC').value > 1 ||
+    document.getElementById('Q49CALC').value > 1 ||
+    document.getElementById('Q50CALC').value > 1 ) {
+    alert('You have entered a number that is not one of the possible options. The score is therefore not valid. Check your answers and try again.');
     }
     }
 </script>
 
 <script type = "text/javascript">
-function calculateAQ(){
-    if (
-        document.getElementById('Q1CALC').value ||
-        document.getElementById('Q2CALC').value ||
-        document.getElementById('Q3CALC').value ||
-        document.getElementById('Q4CALC').value ||
-        document.getElementById('Q5CALC').value ||
-        document.getElementById('Q6CALC').value ||
-        document.getElementById('Q7CALC').value ||
-        document.getElementById('Q8CALC').value ||
-        document.getElementById('Q9CALC').value ||
-        document.getElementById('Q10CALC').value ||
-        document.getElementById('Q11CALC').value ||
-        document.getElementById('Q12CALC').value ||
-        document.getElementById('Q13CALC').value ||
-        document.getElementById('Q14CALC').value ||
-        document.getElementById('Q15CALC').value ||
-        document.getElementById('Q16CALC').value ||
-        document.getElementById('Q17CALC').value ||
-        document.getElementById('Q18CALC').value ||
-        document.getElementById('Q19CALC').value ||
-        document.getElementById('Q20CALC').value ||
-        document.getElementById('Q21CALC').value ||
-        document.getElementById('Q22CALC').value ||
-        document.getElementById('Q23CALC').value ||
-        document.getElementById('Q24CALC').value ||
-        document.getElementById('Q25CALC').value ||
-        document.getElementById('Q26CALC').value ||
-        document.getElementById('Q27CALC').value ||
-        document.getElementById('Q28CALC').value ||
-        document.getElementById('Q29CALC').value ||
-        document.getElementById('Q30CALC').value ||
-        document.getElementById('Q31CALC').value ||
-        document.getElementById('Q32CALC').value ||
-        document.getElementById('Q33CALC').value ||
-        document.getElementById('Q34CALC').value ||
-        document.getElementById('Q35CALC').value ||
-        document.getElementById('Q36CALC').value ||
-        document.getElementById('Q37CALC').value ||
-        document.getElementById('Q38CALC').value ||
-        document.getElementById('Q39CALC').value ||
-        document.getElementById('Q40CALC').value ||
-        document.getElementById('Q41CALC').value ||
-        document.getElementById('Q42CALC').value ||
-        document.getElementById('Q43CALC').value ||
-        document.getElementById('Q44CALC').value ||
-        document.getElementById('Q45CALC').value ||
-        document.getElementById('Q46CALC').value ||
-        document.getElementById('Q47CALC').value ||
-        document.getElementById('Q48CALC').value ||
-        document.getElementById('Q49CALC').value ||
-        document.getElementById('Q50CALC').value
-         === "" ) {
-        alert('Please complete all 50 items of your Autism Assessment to get started.');
+    function validateScores(){
+        if (
+document.getElementById('Q1CALC').value  ==="" ||
+document.getElementById('Q2CALC').value  ==="" ||
+document.getElementById('Q3CALC').value  ==="" ||
+document.getElementById('Q4CALC').value  ==="" ||
+document.getElementById('Q5CALC').value  ==="" ||
+document.getElementById('Q6CALC').value  ==="" ||
+document.getElementById('Q7CALC').value  ==="" ||
+document.getElementById('Q8CALC').value  ==="" ||
+document.getElementById('Q9CALC').value  ==="" ||
+document.getElementById('Q10CALC').value  ==="" ||
+document.getElementById('Q11CALC').value  ==="" ||
+document.getElementById('Q12CALC').value  ==="" ||
+document.getElementById('Q13CALC').value  ==="" ||
+document.getElementById('Q14CALC').value  ==="" ||
+document.getElementById('Q15CALC').value  ==="" ||
+document.getElementById('Q16CALC').value  ==="" ||
+document.getElementById('Q17CALC').value  ==="" ||
+document.getElementById('Q18CALC').value  ==="" ||
+document.getElementById('Q19CALC').value  ==="" ||
+document.getElementById('Q20CALC').value  ==="" ||
+document.getElementById('Q21CALC').value  ==="" ||
+document.getElementById('Q22CALC').value  ==="" ||
+document.getElementById('Q23CALC').value  ==="" ||
+document.getElementById('Q24CALC').value  ==="" ||
+document.getElementById('Q25CALC').value  ==="" ||
+document.getElementById('Q26CALC').value  ==="" ||
+document.getElementById('Q27CALC').value  ==="" ||
+document.getElementById('Q28CALC').value  ==="" ||
+document.getElementById('Q29CALC').value  ==="" ||
+document.getElementById('Q30CALC').value  ==="" ||
+document.getElementById('Q31CALC').value  ==="" ||
+document.getElementById('Q32CALC').value  ==="" ||
+document.getElementById('Q33CALC').value  ==="" ||
+document.getElementById('Q34CALC').value  ==="" ||
+document.getElementById('Q35CALC').value  ==="" ||
+document.getElementById('Q36CALC').value  ==="" ||
+document.getElementById('Q37CALC').value  ==="" ||
+document.getElementById('Q38CALC').value  ==="" ||
+document.getElementById('Q39CALC').value  ==="" ||
+document.getElementById('Q40CALC').value  ==="" ||
+document.getElementById('Q41CALC').value  ==="" ||
+document.getElementById('Q42CALC').value  ==="" ||
+document.getElementById('Q43CALC').value  ==="" ||
+document.getElementById('Q44CALC').value  ==="" ||
+document.getElementById('Q45CALC').value  ==="" ||
+document.getElementById('Q46CALC').value  ==="" ||
+document.getElementById('Q47CALC').value  ==="" ||
+document.getElementById('Q48CALC').value  ==="" ||
+document.getElementById('Q49CALC').value  ==="" ||
+document.getElementById('Q50CALC').value  === "" ) {
+alert('Please complete all 50 items of your Autism Assessment to get started. The AQ score is not valid otherwise.');
 }
-    else {
-        alert('Your Autism Quotient score is: ' + (
+    }
+</script>
+
+<script type = "text/javascript">
+function calculateAQ(){
+alert('Your Autism Quotient score is: ' + (
                                                    +document.getElementById('Q1CALC').value +
                                                    +document.getElementById('Q2CALC').value +
                                                    +document.getElementById('Q3CALC').value +
@@ -210,13 +209,14 @@ function calculateAQ(){
                                                    +document.getElementById('Q47CALC').value +
                                                    +document.getElementById('Q48CALC').value +
                                                    +document.getElementById('Q49CALC').value +
-                                                   +document.getElementById('Q50CALC').value
-              )
-              );
-    }
+                                                   +document.getElementById('Q50CALC').value));
+
 }
 
 </script>
+
+
+
 
 
 <title>Your Autism Quotient Answers</title>
@@ -441,7 +441,7 @@ function startApp() {
     <col width="260px"/>
     <tr>
         <td class="divCenMid " colspan = "4">Autism Assessment
-        <br>Please read each statement very carefully and rate how strongly you agree or disagree by selecting the appropriate number beside  each question.
+        <br>Please read each statement very carefully and rate how strongly you agree or disagree by selecting the appropriate number beside each question.
         </td>
     </tr>
     <tr>
@@ -811,7 +811,7 @@ function startApp() {
         <tr>
             <th>No.</th>
             <th>Question</th>
-            <th>Score</th>
+            <th>Score (1 = agree, 0 = disagree)</th>
         </tr>
         </thead>
         <tbody>
@@ -1004,7 +1004,8 @@ function startApp() {
             <td>Q38</td>
             <td>I am bad at social chit-chat.</td>
             <td id="htqf38">-</td>
-        </tr> <tr>
+        </tr>
+        <tr>
             <td>Q39</td>
             <td>People often tell me that I keep going on and on about the same thing.</td>
             <td id="htqf39">-</td>
@@ -1068,8 +1069,8 @@ function startApp() {
     </table>
 </div>
 
-<input type="button" onClick="checkScores();fillHidTable()" value="Save Your Answers">
-<input type="button" onClick="checkScores(); calculateAQ()" value="Calculate Your Score">
+<input type="button" onClick="checkScores();validateScores(); fillHidTable();" value="Save Your Answers">
+<input type="button" onClick="checkScores();validateScores(); calculateAQ(); " value="Calculate Your Score">
 
 </div>
 </div>
