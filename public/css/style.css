@@ -3,6 +3,14 @@ body {
 	color: #037C98;
 	font-weight: 300;
 }
+input {
+	font-family: 'Lato', sans-serif;
+	color: #037C98;
+}
+
+.dashboard-link{
+	text-transform: uppercase;
+}
 
 hr {
 	height: 1px;
@@ -36,6 +44,25 @@ hr {
 
 h1 {
     text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
 }
 
 .text-muted {
