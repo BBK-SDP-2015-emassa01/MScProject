@@ -2,14 +2,16 @@
 <html lang = "en>"
 <head>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/leapstrap.min.js"></script>
 <meta charset = "utf-8">
 <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
 <meta name = "viewport" content = "width = device-width, initial-scale = 1" >
 <title>Jellibeans V1 Welcome Page</title>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-<link rel = "stylesheet" href = "css/bootstrap.css">
+<link rel = "stylesheet" href = "css/leapstrap.css">
 <link rel= "stylesheet" href = "css/style.css">
+<script src="//js.leapmotion.com/0.3.0-beta3/leap.js"></script>
+
 
 <script src="https://apis.google.com/js/client:platform.js?onload=startApp" async defer></script>
   <!-- JavaScript specific to this application that is not related to API
@@ -402,7 +404,7 @@ function startApp() {
 </script>
 <div class = "container">
 <div class = " title-lesssuper row img-responsive" align="right">
-    <a href = "DoKnowGo.html" class = "text-uppercase" style="
+    <a  href = "DoKnowGo.html" class = "text-uppercase leap-interactive" style="
         margin-right: 20px;" >Go To Jellibeans</a>
 </br>
 <div class = "text-thinSmall">
@@ -1097,7 +1099,7 @@ function startApp() {
         </div>
     </div>
 </div>
-
+<script>LeapManager.init({interactiveSelector:"a",maxCursors:1});</script>
 
 </body>
 </html >
