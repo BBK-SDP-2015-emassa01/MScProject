@@ -1,0 +1,182 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: #037C98;
+	font-weight: 300;
+}
+input {
+	font-family: 'Lato', sans-serif;
+	color: #037C98;
+}
+
+.dashboard-link{
+	text-transform: uppercase;
+}
+
+hr {
+	height: 1px;
+	color: #BCBBBB;
+	background-color: #BCBBBB;
+}
+
+.text-mystyle {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+.smallText{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.vSmallText{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.mediumText{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.text-muted {
+	color: #BCBBBB;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.text-thinSmall {
+	font-weight: 120;
+	font-size: 15px;
+}
+
+.title-super {
+	font-size: 60px;
+}
+
+.title-lesssuper {
+	font-size: 30px;
+}
+
+.title-small {
+	font-size: 20px;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+#first {
+	width:200px;
+	height:200px;
+	background: #037C98;
+}
+
+#second {
+	width:200px;
+	height:200px;
+	background: #E3FF00;
+}
+
+#third {
+	width:200px;
+	height:200px;
+	background: #13FF00;
+}
+
+#fourth {
+	width:200px;
+	height:200px;
+	background: #FF0000;
+}
+
+.surprise, .surprise2 {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#firstSmall {
+    width:100px;
+	height:100px;
+	background: #037C98;
+	margin-top: 20px;
+}
+
+#secondSmall {
+	width:100px;
+	height:100px;
+	background: #E3FF00;
+	margin-top: 20px;
+}
+
+#thirdSmall {
+	width:100px;
+	height:100px;
+	background: #13FF00;
+	margin-top: 20px;
+}
+
+#fourthSmall {
+	width:100px;
+	height:100px;
+	background: #FF0000;
+	margin-top: 20px;
+}
+
+
+#firstSuperSmall {
+    width:50px;
+	height:50px;
+	background: #037C98;
+	margin-top: 20px;
+}
+
+#secondSuperSmall {
+	width:50px;
+	height:50px;
+	background: #E3FF00;
+	margin-top: 20px;
+}
+
+#thirdSuperSmall {
+	width:50px;
+	height:50px;
+	background: #13FF00;
+	margin-top: 20px;
+}
+
+#fourthSuperSmall {
+	width:50px;
+	height:50px;
+	background: #FF0000;
+	margin-top: 20px;
+}
+
