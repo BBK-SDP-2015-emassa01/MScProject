@@ -189,3 +189,67 @@ function calculateAQ(){
 }
 
 
+
+window.onload=function(){
+    var url = document.URL;
+    url1 = url.split("=");
+    url2 = url1[1].split("%20").join(" ");
+    url2 = url2.split("+").join(" ");
+    document.getElementById("queryStringVal").value=url2;
+}
+
+
+
+function gcseCallback() {
+    if (document.readyState != 'complete')
+        return google.setOnLoadCallback(gcseCallback, true);
+    google.search.cse.element.render({gname:'gsearch', div:'results', tag:'searchresults-only', attributes:{linkTarget:'', webSearchResultSetSize: "3"}});
+    var element = google.search.cse.element.getElement('gsearch');
+    element.execute(queryStringVal.value);
+};
+window.__gcse = {
+parsetags: 'explicit',
+callback: gcseCallback
+};
+(function() {
+ var cx = '008818185974073145685:ga_fmgk9gf0';
+ var gcse = document.createElement('script');
+ gcse.type = 'text/javascript';
+ gcse.async = true;
+ gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+ '//www.google.com/cse/cse.js?cx=' + cx;
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(gcse, s);
+ })();
+
+
+
+function gcseCallback() {
+    if (document.readyState != 'complete')
+        return google.setOnLoadCallback(gcseCallback, true);
+    google.search.cse.element.render({gname:'gsearch', div:'results', tag:'searchresults-only', attributes:{linkTarget:'', webSearchResultSetSize: "3"}});
+    var element = google.search.cse.element.getElement('gsearch');
+    element.execute(queryStringVal.value);
+};
+window.__gcse = {
+parsetags: 'explicit',
+callback: gcseCallback
+};
+(function() {
+ var cx = '008818185974073145685:ga_fmgk9gf0';
+ var gcse = document.createElement('script');
+ gcse.type = 'text/javascript';
+ gcse.async = true;
+ gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+ '//www.google.com/cse/cse.js?cx=' + cx;
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(gcse, s);
+ })();
+
+window.onload=function(){
+    var url = document.URL;
+    url1 = url.split("=");
+    url2 = url1[1].split("%20").join(" ");
+    url2 = url2.split("+").join(" ");
+    document.getElementById("queryStringVal").value=url2;
+}
