@@ -246,10 +246,4 @@ callback: gcseCallback
  s.parentNode.insertBefore(gcse, s);
  })();
 
-window.onload=function(){
-    var url = document.URL;
-    url1 = url.split("=");
-    url2 = url1[1].split("%20").join(" ");
-    url2 = url2.split("+").join(" ");
-    document.getElementById("queryStringVal").value=url2;
-}
+

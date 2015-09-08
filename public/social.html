@@ -59,6 +59,16 @@
                         { document.getElementById("button12").value="x";}
                         </script>
                         
+                        <script type="text/javascript">
+                        window.onload=function(){
+                        var url = document.URL;
+                        url1 = url.split("=");
+                        url2 = url1[1].split("%20").join(" ");
+                        url2 = url2.split("+").join(" ");
+                        document.getElementById("queryStringVal").value=url2;
+                        }
+                        </script>
+                        
                         </head>
                         <body>
                         <div class = "container text-center">
@@ -235,6 +245,6 @@
                         </div>
                         
                         </div>
-                        
+                        <script>LeapManager.init({interactiveSelector:"a",maxCursors:1});</script>
                         </body>
                         </html>
